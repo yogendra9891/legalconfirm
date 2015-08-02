@@ -1,0 +1,1858 @@
+@charset "utf-8";
+
+/* CSS Document */
+@font-face {
+	font-family: 'eb_garamondregular';
+	src: url('../fonts/ebgaramond-webfont.eot');
+	src: url('../fonts/ebgaramond-webfont.eot?#iefix')
+		format('embedded-opentype'), url('../fonts/ebgaramond-webfont.woff')
+		format('woff'), url('../fonts/ebgaramond-webfont.ttf')
+		format('truetype'),
+		url('../fonts/ebgaramond-webfont.svg#eb_garamondregular')
+		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'lucida_sans_unicoderegular';
+	src: url('../fonts/l_10646-webfont.eot');
+	src: url('../fonts/l_10646-webfont.eot?#iefix')
+		format('embedded-opentype'), url('../fonts/l_10646-webfont.woff')
+		format('woff'), url('../fonts/l_10646-webfont.ttf') format('truetype'),
+		url('../fonts/l_10646-webfont.svg#lucida_sans_unicoderegular')
+		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: 'eb_garamondregular';
+}
+
+.main-wrapper{
+     width:100%; 
+	 margin:0px; 
+	 padding:0px; 
+	 background:#fff;
+
+h1,h2,h3,h4,h5,h6,p,ul,form,label {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ececec;
+}
+.logo a:hover{ border: medium none;}
+h1 {
+	font-size: 36px;
+	color: #fff;
+}
+
+h2 {
+	font-size: 32px;
+	color: #fff;
+}
+
+h3 {
+	font-size: 28px;
+	color: #0000FF;
+}
+
+h4 {
+	font-size: 24px;
+	color: #0000ff;
+	line-height: 30px;
+}
+
+h5 {
+	font-size: 24px;
+	padding: 0px 0;
+	color: #000;
+}
+
+h6 {
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+input,select {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+input[type="text"] {
+	background: url(../images/input-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	border: 0 none;
+	line-height: 36px;
+	color: #888888;
+	height: 36px;
+	width: 250px;
+	padding: 0 13px;
+}
+
+input[type="password"] {
+	background: url(../images/input-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	border: 0 none;
+	line-height: 36px;
+	color: #888888;
+	height: 36px;
+	width: 250px;
+	padding: 0 13px;
+}
+
+.header-container {
+	width: 100%;
+	float: left;
+	}
+
+.tagline-container {
+	width: 100%;
+	float: left;
+}
+
+.nav-container {
+	width: 100%;
+	float: left;
+	background: url(../images/nav-bg.jpg) repeat-x left top;
+}
+
+.main-container {
+	width: 100%;
+	float: left;
+}
+
+.footer-container {
+	width: 100%;
+	float: left;
+	background: url(../images/footer-bg.jpg) repeat-x left top #1212d6;
+	height: 100px;
+}
+
+.login-container {
+	width: auto;
+	margin: 0 auto;
+	display: table;
+}
+
+.header {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0px 0;
+	text-align: center;
+}
+
+.logo {
+	float: left;
+	margin: 0 25px 0 368px;
+	border: medium none;
+}
+
+.heading {
+	float: left;
+}
+
+.tagline {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nav {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nav ul {
+	margin-left: 386px;
+}
+
+.nav li {
+	list-style-type: none;
+	float: left;
+}
+
+.nav a {
+	display: block;
+	padding: 8px 16px;
+}
+
+.main {
+	margin: 36px auto;
+	width: 960px;
+}
+
+.login-box {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	background: url(../images/login-box-bg.png) repeat left top;
+	padding: 18px 23px;
+	float: left;
+	min-width: 326px;
+	min-height: 200px;
+}
+
+.login-box input {
+	margin: 20px 0 0;
+}
+
+.divider {
+	background: url(../images/login-divider.png) no-repeat left top;
+	margin: 0 18px;
+	float: left;
+	width: 22px;
+	height: 249px;
+}
+
+.login-box .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	height: 37px;
+	line-height: 37px;
+	display: inline-block;
+	margin: 20px 5px 10px 0;
+	font-family: lucida_sans_unicoderegular;
+	color: #ffffff;
+	cursor: pointer;
+	border: 0;
+}
+
+.login-box a.button:hover {
+	color: #fff;
+	background: url(../images/btn-bg-hover.png) repeat-x left top;
+}
+
+.footer {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	height: 50px;
+	line-height: 38px;
+}
+
+.footer p {
+	color: #fff;
+}
+
+.register-box {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	background: url(../images/login-box-bg.png) repeat left top;
+	padding: 18px 23px;
+	min-width: 326px;
+	min-height: 200px;
+}
+
+.register-box input {
+	margin: 11px 0 0;
+	float: left;
+}
+
+.divider {
+	background: url(../images/login-divider.png) no-repeat left top;
+	margin: 0 18px;
+	float: left;
+	width: 22px;
+	height: 249px;
+}
+
+.register-box .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	height: 37px;
+	line-height: 33px;
+	display: inline-block;
+/*	margin: 20px 5px 10px 0; */
+	font-family: lucida_sans_unicoderegular;
+	cursor: pointer;
+	color:#fff;
+	margin-top: -8px;
+	border: none;
+	outline: none;
+}
+
+.register-box a.button:hover {
+	color: #fff;
+	background: url(../images/btn-bg-hover.png) repeat-x left top;
+}
+
+select {
+	background: url("../images/input-bg.png") repeat-x scroll left top
+		transparent;
+	border: 0 none;
+	border-radius: 5px 5px 5px 5px;
+	color: #888888;
+	height: 36px;
+	padding: 10px;
+	width: 280px;
+}
+
+/* ++++++++++++++  pagination  ++++++++++++++ */
+.pagination {
+	margin: 10px 0;
+	padding: 10px 0 10px 0px;
+	clear: both;
+}
+
+.pagination ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	padding: 14px;
+}
+
+.pagination li {
+	display: inline;
+	padding: 2px 5px;
+	text-align: left;
+	border: solid 1px #eee;
+	margin: 0 2px
+}
+
+.pagenav {
+	padding: 2px;
+	clear: both;
+}
+
+.pagination li.pagination-start,.pagination li.pagination-next,.pagination li.pagination-end,.pagination li.pagination-prev
+	{
+	border: 0
+}
+
+.pagination li.pagination-start,.pagination li.pagination-start  span {
+	padding: 0
+}
+
+p.counter {
+	font-weight: bold;
+}
+
+/* edit by yogendra*/
+.client-searcharea .filter-search-fltlft #filter_search {
+	width: 170px;
+	height: 36px;
+	border: none;
+	outline: none;
+	margin: 0 0 0 10px;
+}
+
+.filter-search-fltlft .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	height: 37px;
+	cursor: pointer;
+	color: #fff;
+	/*line-height:37px;
+display:inline-block;
+margin:20px 5px 10px 0;*/
+	font-family: lucida_sans_unicoderegular;
+	width: 65px;
+	border:none;
+	outline:none;
+}
+
+.filter-search-fltlft a.button:hover {
+	color: #fff;
+	background: url(../images/btn-bg-hover.png) repeat-x left top;
+}
+
+.auditor-clients {
+	width: 400px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	min-width: 326px;
+	padding: 18px 23px;
+}
+
+.auditor-clients-header {
+	background-color: #2D2D2D;
+	height: 25px;
+	color: #FFFFFF;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.auditor-clients-header span {
+	margin-left: 5px;
+}
+
+.client-searcharea {
+    margin:10px 0 0 0px;
+	
+}
+
+.auditor-clientlist-add-wrapper #adminForm {
+	border-radius: 5px 5px 5px 5px;
+}
+
+.auditor-clientlist-add-wrapper #filter-bar #filter_search {
+	margin-left: 15px;
+	width: 275px;
+	margin-top: 4px;
+}
+
+.auditor-statuses {
+	border: 1px solid #000;
+	width: 400px;
+	height: 400px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	margin-left: 15px;
+}
+
+.auditor-status-header {
+	background-color: #0C1A3E;
+	height: 18px;
+	color: #FFFFFF;
+}
+
+.auditor-reports {
+	border: 1px solid #000;
+	width: 300px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	margin-left: 15px;
+}
+
+.auditor-reports-header {
+	background-color: #0C1A3E;
+	height: 18px;
+	color: #FFFFFF;
+}
+
+.auditor-quicklinks {
+	width: 400px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	min-width: 326px;
+	padding: 18px 23px;
+}
+
+.auditor-quicklinks-header {
+	background-color: #2D2D2D;
+	height: 25px;
+	color: #FFFFFF;
+	border-radius: 5px 5px 5px 5px;
+	line-height: 25px;
+}
+
+.auditor-quicklinks-header span {
+	margin-left: 5px;
+}
+
+.auditor-quicklinks-links li {
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+.recently-view-client {
+	margin-bottom: 3px;
+	margin-top: 5px;
+}
+
+.view-client-list {
+	margin-bottom: 12px;
+	line-height: 25px;
+}
+
+.searched-clients {
+    border: 1px solid #2D2D2D;
+    border-radius: 5px 5px 5px 5px;
+    max-height: 100px;
+    overflow-y: scroll;
+    width: 262px;
+}
+
+.searched-clients .companyname {
+	margin-left: 7px;
+	line-height: 20px;
+}
+
+.auditor-wrapper-divider {
+	margin: 0 18px;
+	float: left;
+	width: 22px;
+	height: 249px;
+}
+
+.auditor-clients--add-header {
+	background-color: #2D2D2D;
+	height: 25px;
+	color: #FFFFFF;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#filter-bar .submit input {
+	background: url("../images/btn-bg.png") repeat-x scroll left top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+	font-family: lucida_sans_unicoderegular;
+	height: 37px;
+	width: 65px;
+	color:#fff;
+	cursor: pointer;
+}
+
+.opreration_button {
+	float: right;
+	width: 232px;
+}
+
+.opreration_button .submit input {
+	background: url("../images/btn-bg.png") repeat-x scroll left top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+	font-family: lucida_sans_unicoderegular;
+	height: 37px;
+	width: 105px;
+	float: left;
+	margin-right: 10px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.auditor-clientlist-add-wrapper #adminForm .adminlist .list-footer ul {
+	margin-top: 10px;
+}
+
+.auditor-clientlist-add-wrapper #adminForm #adminformclass {
+	text-align: center;
+}
+
+.auditor-clients--add-header {
+	background-color: #2D2D2D;
+	height: 25px;
+	color: #FFFFFF;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.auditor-clients-company-information {
+	
+}
+
+.auditor-clients-signer-information {
+	
+}
+
+.clientcompnayinput {
+	
+}
+
+.companyinfoclient {
+	margin-left: 3px;
+}
+
+.companyinfoclient label.client-company {
+	width: 250px;
+	margin-right: 121px;
+}
+
+.companyinfoclient label.client-engagementno {
+	width: 250px;
+	margin-right: 84px;
+}
+
+.companyinfoclient label.client-website {
+	width: 250px;
+	margin-left: 9px;
+}
+
+.companyinforenagement input {
+	background: url("../images/input-bg.png") repeat-x scroll left top
+		transparent;
+	border: 0 none;
+	border-radius: 5px 5px 5px 5px;
+	color: #888888;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 11px;
+	margin-left: 3px;
+	margin-bottom: 3px;
+	width: 185px;
+}
+
+.first-information { /*border: 1px solid #2D2D2D;*/
+	width: 313px;
+	height: auto;
+	float: left;
+	display: inline;
+	margin-bottom: 10px;
+	padding-bottom: 3px;
+	margin-left: 4px;
+	padding-left: 4px;
+}
+
+.second-information { /*border: 1px solid #2D2D2D;*/
+	width: 313px;
+	height: auto;
+	float: left;
+	display: block;
+	margin-bottom: 10px;
+	padding-bottom: 3px;
+	margin-left: 4px;
+	padding-left: 10px;
+}
+
+.first-information label {
+	float: left;
+	margin-left: 5px;
+	margin-top: 3px;
+	width: 80px;
+}
+
+.first-information input {
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 193px;
+}
+
+.second-information label {
+	float: left;
+	margin-left: 5px;
+	margin-top: 3px;
+	width: 75px;
+	clear: both;
+}
+
+.second-information input {
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 197px;
+}
+
+.requiredfield {
+	color: red;
+}
+
+.add-client-button .submit input {
+	background: url("../images/btn-bg.png") repeat-x scroll left top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+	font-family: lucida_sans_unicoderegular;
+	height: 37px;
+	width: 97px;
+	float: left;
+	cursor: pointer;
+	margin-right: 10px;
+	color: #FFF;
+}
+
+.add-client-button .requiredfield {
+	float: right;
+	width: 226px;
+	margin: 5px;
+}
+
+.add-client-button-submit {
+	float: right;
+	width: 230px;
+}
+
+.second-information .err {
+	color: red;
+	font-size: 15px;
+	margin-left: 122px;
+}
+
+.clientprofile-divider {
+	float: left;
+	height: 249px;
+	margin: 0 8px;
+	width: 8px;
+}
+
+.clientprofile {
+	width: 300px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	padding: 18px 23px;
+}
+
+.auditor-clients-header {
+	background-color: #1919ff;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+.auditor-clients-header span {
+	margin: 5px;
+}
+
+.lawyerarea {
+	width: 300px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	padding: 18px 23px;
+}
+
+.lawyerarea-header {
+	background-color: #1919FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+.lawyerarea-header span {
+	margin-left: 5px;
+}
+
+.lawyerarea .submit #button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	margin-top: 5px;
+	height: 37px;
+	line-height: 37px;
+	display: inline-block;
+	font-family: lucida_sans_unicoderegular;
+}
+
+.authorizationcode {
+	width: 300px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	margin-top: 24px;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	padding: 18px 23px;
+}
+
+.authorizationcode-header {
+	background-color: #1919FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+.authorizationcode-header span {
+	margin-left: 5px;
+}
+
+.authorizationcode .submit button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 12px;
+	margin-top: 5px;
+	height: 37px;
+	line-height: 37px;
+	display: inline-block;
+	font-family: lucida_sans_unicoderegular;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.auditornotes {
+	width: 250px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	padding: 18px 23px;
+	margin-top: 24px;
+}
+
+.auditornotes-header {
+	background-color: #2D2D2D;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+.auditornotes-header span {
+	margin-left: 5px;
+}
+
+.auditornotes textarea {
+	height: 130px;
+	margin-left: 0px;
+	margin-top: 4px;
+	width: 231px;
+}
+
+#deletesigner {
+	width: 40px;
+}
+
+.clientname {
+	line-height: 40px;
+	 margin-left: 78px;
+}
+
+.clientname .submit {
+	float: right;
+	margin-right: 28px;
+}
+
+.clientname .submit #button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	height: 37px;
+	line-height: 37px;
+	display: inline-block;
+	font-family: lucida_sans_unicoderegular;
+}
+
+.signerarea .submit #button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	height: 37px;
+	line-height: 37px;
+	display: inline-block;
+	font-family: lucida_sans_unicoderegular;
+}
+
+.companyname span {
+	margin-left: 48px;
+}
+
+.company-name-result span {
+	margin-right: 118px;
+}
+
+.auditornotes .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	height: 37px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 37px;
+	display: inline-block;
+	font-family: lucida_sans_unicoderegular;
+	color: #fff;
+	margin-right: 16px;
+}
+
+.auditornotes .submit a {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	height: 37px;
+	color: #fff;
+	line-height: 37px;
+	display: inline-block;
+	font-family: lucida_sans_unicoderegular;
+}
+
+.auditor-clients--add-header {
+	background-color: #1919FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+}
+
+.auditor-clients--add-header span {
+	margin-left: 5px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.edit-client-company {
+	float: right;
+}
+
+.edit-client-company .submit input {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 4px;
+	margin-bottom: 3px;
+	cursor: pointer;
+	height: 37px;
+	width: 105px;
+	color: #fff;
+	line-height: 37px;
+	display: inline-block;
+	font-family: lucida_sans_unicoderegular;
+}
+
+.clientprofileproposal-header {
+	background-color: #1919FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+.clientprofileproposal-header span {
+	margin-left: 5px;
+}
+
+.clientprofileproposal .filter-search-fltlft #filter_search {
+	height: 36px;
+	width: 170px;
+	margin-left: 0px;
+	margin-bottom: 3px;
+}
+
+.clientprofileproposal #adminForm .pagination ul {
+	margin-top: 10px;
+}
+
+.clientprofileproposal .submit a {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 4px;
+	margin-bottom: 10px !important;
+	float: right;
+	text-align: center;
+	cursor: pointer;
+	width: 105px;
+	color: #fff;
+	line-height: 37px;
+	font-family: lucida_sans_unicoderegular;
+}
+
+.clientprofileproposal .adminlist #adminformclass {
+	text-align: left;
+}
+
+.clientprofileproposal .adminlist #adminformclass td {
+	text-align: center;
+}
+
+.lawfirmoffices-header {
+	background-color: #2D2D2D;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+.lawfirmofficelocation{margin-top: 10px;}
+.lawfirmoffices .submit a {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 4px;
+	margin-top: 5px;
+	margin-bottom: 3px;
+	float: right;
+	text-align: center;
+	cursor: pointer;
+	width: 105px;
+	color: #fff;
+	line-height: 37px;
+	font-family: lucida_sans_unicoderegular;
+}
+
+.lawfirmofficelocation .adminlist {
+	text-align: center;
+}
+
+.alreadyselectedlawfirms .adminlist tr {
+	text-align: left;
+}
+
+.clientprofileproposal .adminlist tr {
+	text-align: center;
+}
+
+.lawfirmoffices-header span {
+	margin-left: 5px;
+}
+
+.lawfirmoffices .adminlist tr {
+	text-align: center;
+}
+
+.add-more-Lawfirm {
+	max-height: 150px;
+	overflow-x: scroll;
+	overflow-y: scroll;
+}
+
+.clientprofileproposal #adminForm table#adminList {
+	width: 660px;
+}
+
+.alreadyselectedlawfirms .adminlist .rownew td {
+	
+}
+
+.alreadyselectedlawfirms .adminlist {
+	width: 660px;
+}
+
+.nowselectedlawfirms .adminlist .rownew td {
+	width: 0px !important;
+}
+
+.nowselectedlawfirms table.adminlist {
+	width: 660px;
+}
+
+.auditoreditnotes .submit .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 2px;
+	height: 37px;
+	margin-bottom: 3px;
+	margin-top: 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	width: 105px;
+	color: #fff;
+	line-height: 37px;
+	font-family: lucida_sans_unicoderegular;
+	float: left;
+	margin-bottom: 3px;
+}
+
+.auditoreditnotes {
+	float: left;
+}
+
+.auditoreditbuttonwrapper {
+	float: right;
+}
+
+.auditernotesviewwrraper .submit a {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 4px;
+	margin-bottom: 3px;
+	float: right;
+	text-align: center;
+	cursor: pointer;
+	width: 70px;
+	color: #fff;
+	line-height: 37px;
+	font-family: lucida_sans_unicoderegular;
+}
+
+.auditornotes-view {
+	
+}
+
+.auditornotes-button {
+	float: right;
+}
+
+.first-information .errzip {
+	float: left;
+}
+
+.addsigner-new .submit .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 2px;
+	height: 37px;
+	margin-bottom: 3px;
+	margin-top: 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	width: 80px;
+	color: #fff;
+	line-height: 37px;
+	font-family: lucida_sans_unicoderegular;
+	float: left;
+	margin-bottom: 3px;
+}
+
+.addsigner-new-requiredfield {
+	float: right;
+	width: 220px;
+}
+
+fieldset {
+	border: 2px solid #858585;
+    margin-bottem: 20px;
+    padding: 10px;
+}
+
+legend {
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.auditornotesedit textarea {
+	width: 392px;
+}
+
+.initiate {
+	width: 300px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	padding: 18px 23px;
+	margin-top: 24px;
+}
+
+.initiate-header {
+	background-color: #1919FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+.initiate-header span {
+	padding-left: 5px;
+}
+
+.initiate .submit a {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 4px;
+	margin-bottom: 3px;
+	margin-top: 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	width: 156px;
+	color: #fff;
+	line-height: 37px;
+	font-family: lucida_sans_unicoderegular;
+}
+
+.non-member-area .submit .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	height: 37px;
+	margin-bottom: 3px;
+	text-align: center;
+	cursor: pointer;
+	width: 80px;
+	line-height: 37px;
+	font-family: lucida_sans_unicoderegular;
+	color: #fff;
+}
+
+.button2-left .blank .templatesave {
+	padding: 0 6px;
+	width: 70px;
+	margin-bottom: 10px;
+}
+
+.authorizationcode .submit a {
+	background: url("../images/btn-bg.png") repeat-x scroll left top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	cursor: pointer;
+	float: right;
+	font-family: lucida_sans_unicoderegular;
+	line-height: 37px;
+	margin-bottom: 3px;
+	margin-right: 66px;
+	margin-top: 5px;
+	padding: 0 12px;
+	text-align: center;
+	width: 160px;
+}
+
+.auditor-clientlogs-header {
+	background-color: #2D2D2D;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+}
+
+.auditor-clientlogs-header span {
+	padding-left: 5px;
+}
+
+.auditor-clientlogs-lawfirm-header {
+	background-color: #2D2D2D;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+}
+
+.auditor-clientlogs-lawfirm-header span {
+	padding-left: 5px;
+}
+
+.auditor-clientlogs-lawfirm-wrapper .submit a {
+	background: url("../images/btn-bg.png") repeat-x scroll left top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	cursor: pointer;
+	float: right;
+	font-family: lucida_sans_unicoderegular;
+	line-height: 37px;
+	margin-bottom: 3px;
+	margin-top: 5px;
+	padding: 0 12px;
+	text-align: center;
+	width: 71px;
+}
+
+.lawfirm-task-details td {
+	text-align: center;
+}
+
+.auditor-clientlogs-wrapper .adminlist td {
+	text-align: center;
+	width: 150px;
+}
+
+.auditor-clientlogs-wrapper .adminlist .tfoot td {
+	text-align: left;
+}
+
+.auditor-clientlogs-wrapper .adminlist .pagination ul {
+	margin-top: 10px;
+}
+
+.contact-form-llc #contact-form input#jform_contact_email{
+	background: url("../images/input-bg.png") repeat-x scroll left top
+		transparent;
+	border: 0 none;
+	border-radius: 5px 5px 5px 5px;
+	color: #888888;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 13px;
+	width: 250px;
+}
+
+.contact-form-llc #contact-form button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	height: 37px;
+	margin-bottom: 3px;
+	text-align: center;
+	cursor: pointer;
+	width: 90px;
+	line-height: 37px;
+	font-family: lucida_sans_unicoderegular;
+	color: #fff;
+}
+
+.contact-form-llc #contact-form dt {
+	float: left;
+	padding-top: 10px;
+	width: 128px;
+}
+
+.contact-form-llc #contact-form dd {
+	padding-top: 10px;
+}
+
+.clientprofileproposal table#lawfirms-list {
+	width: 660px;
+}
+
+.clientprofileproposal table#tobeselectedlawfirms {
+	width: 660px;
+}
+
+/*
+code for the table hover..
+*/
+.auditor-clientlist-add-wrapper #adminForm th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #080878;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.auditor-clientlist-add-wrapper #adminForm #adminformclass td {
+	padding: 8px;
+	background: #8686FD;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.auditor-clientlist-add-wrapper #adminForm  tr#adminformclass:hover td {
+	background: #5b5bf4;
+	color: #000 !important;
+}
+
+.auditor-clientlist-add-wrapper #adminForm  tr#adminformclass:hover td a
+	{
+	color: #000 !important;
+}
+
+.pagination .limit {
+	text-align: left;
+}
+
+.pagination .counter {
+	float: left;
+	margin-top: 15px;
+}
+
+.clientprofileproposal .adminlist th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #080878;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.clientprofileproposal .adminlist .rownew td {
+	padding: 8px;
+	background: #C7C6A7;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.clientprofileproposal .adminlist  tr.rownew:hover td {
+	background: #E3E181;
+	color: #000 !important;
+}
+
+.clientprofileproposal .adminlist  tr.rownew:hover td a {
+	color: #000 !important;
+}
+
+.clientprofileproposal .adminlist tr#lawfirms-select td {
+	padding: 8px;
+	background: #8686FD;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.clientprofileproposal .adminlist tr#lawfirms-select:hover td {
+	background: #5b5bf4;
+	color: #000 !important;
+}
+
+.clientprofileproposal #adminForm #lawfirms-list #adminformclass td {
+	padding: 8px;
+	background: #8686FD;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.clientprofileproposal #adminForm #lawfirms-list tr#adminformclass:hover td
+	{
+	background: #5b5bf4;
+	color: #000 !important;
+}
+
+.lawfirmoffices .lawfirmofficelocation table.adminlist th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #080878;
+	color: #FFFFFF;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.lawfirmoffices .lawfirmofficelocation table.adminlist td {
+	padding: 8px;
+	background: #8686FD;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.lawfirmoffices .lawfirmofficelocation table.adminlist tr#classsid:hover td
+	{
+	background: #5b5bf4;
+	color: #000 !important;
+}
+
+.lawfirmoffices #adminForm table.adminlist th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #9C935E;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.lawfirmoffices #adminForm table.adminlist tr.rowclosed	td {
+	padding: 8px;
+	background: #C7C6A7;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.lawfirmoffices #adminForm table.adminlist tr.rowclosed:hover td {
+	background: #E3E181;
+	color: #000 !important;
+}
+
+.clientprofileproposal table#tobeselectedlawfirms th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #9C935E;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.clientprofileproposal table#tobeselectedlawfirms tr#tobeselectedlawfirms td
+	{
+	padding: 8px;
+	background: #C7C6A7;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.clientprofileproposal table#tobeselectedlawfirms tr#tobeselectedlawfirms:hover td
+	{
+	background: #E3E181;
+	color: #000 !important;
+}
+
+.auditor-clientlogs-wrapper #adminForm table.adminlist th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #9C935E;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.auditor-clientlogs-wrapper #adminForm table.adminlist tr#adminformclass td
+	{
+	padding: 8px;
+	background: #C7C6A7;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.auditor-clientlogs-wrapper #adminForm table.adminlist tr#adminformclass:hover td a
+	{
+	color: black;
+	cursor: pointer;
+}
+
+.auditor-clientlogs-wrapper #adminForm table.adminlist tr#adminformclass:hover td
+	{
+	background: #E3E181;
+	color: #000 !important;
+}
+
+.about-us {
+	background: url("../images/login-box-bg.png") repeat scroll left top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+	padding: 14px;
+}
+
+.contact {
+	background: url("../images/login-box-bg.png") repeat scroll left top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+	padding: 14px;
+}
+
+.logout-profile-wrraper {
+	float: right;
+	margin-top: -32px;
+}
+
+.logout-button {
+	display: inline;
+	margin: 11px;
+}
+
+.profile-page {
+	display: block;
+	float: left;
+}
+
+.lawfirm-task-details table {
+	width: 660px;
+}
+
+.lawfirm-task-details table th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #9C935E;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.lawfirm-task-details table tr.findtemplate td {
+	padding: 8px;
+	background: #C7C6A7;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.lawfirm-task-details table tr.findtemplate:hover td {
+	background: #E3E181;
+	color: #000 !important;
+}
+
+.recently-view-client a {
+	margin-top: 48px !important;
+	padding-top: 5px !important;
+	width: 45px;
+	line-height: 25px !important;
+}
+.clientprofile div{line-height: 25px;}
+/* edit end by yogendra*/ /** Abhishek**/
+.registration2 fieldset {
+	border: 2px solid #858585;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.registration2 legend {
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.err {
+	color: red;
+	font-size: 15px;
+}
+
+.textbold {
+	font-weight: bold;
+}
+
+.unpin1 {
+	display: none;
+}
+
+.pin1 {
+	display: none;
+}
+
+.pin input {
+	background-color: sandybrown;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.pin2 input {
+	background-color: sandybrown;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.unpin2 input {
+	background-color: rosybrown;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.unpin input {
+	background-color: rosybrown;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 3px;
+}
+
+ul.simplePagerNav li {
+	display: block;
+	float: left;
+	font-family: georgia;
+	font-size: 14px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+li.currentPage {
+	background: none repeat scroll 0 0 #FF9500;
+}
+
+.sbox-btn-close {
+	background: url("../images/closebox.png") no-repeat scroll center center
+		transparent;
+	border: medium none;
+	height: 30px;
+	position: absolute;
+	right: 0;
+	top: -2px;
+}
+
+.black_overlay {
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity =     80);
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	padding: 4px;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+}
+
+.pagination1 select {
+	background: url("../images/input-bg.png") repeat-x scroll left top
+		transparent;
+	border: 0 none;
+	border-radius: 5px 5px 5px 5px;
+	color: #888888;
+	height: 36px;
+	padding: 10px;
+	width: 140px;
+	margin: 5px;
+}
+
+.pagination select {
+	background: url("../images/input-bg.png") repeat-x scroll left top
+		transparent;
+	border: 0 none;
+	border-radius: 5px 5px 5px 5px;
+	color: #888888;
+	height: 36px;
+	padding: 10px;
+	width: 58px;
+	margin: 5px;
+}
+
+/* Table css */
+.register-box table.alllist th {
+	font-size: 13px;
+	font-weight: bold;
+	background: #9C935E;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	width: 1px;
+}
+
+.register-box table.alllist td {
+	padding: 8px;
+	background: #C7C6A7;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+	text-align: center;
+}
+
+.register-box table.alllist tr:hover td {
+	background: #E3E181;
+	color: #000 !important;
+}
+
+.auditor-clientlist-add-wrapper #adminForm  tr#adminformclass:hover td a
+	{
+	color: #000 !important;
+}
+
+.pdfwidth {
+	width: 115px;
+	float: left;
+}
+
+.editprofile td {
+	width: 90px;
+}
+
+table {
+	width: 100%;
+}
+
+.assignedtask {
+	float: right;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #fff;
+}
+
+table {
+	border-collapse: collapse !important;
+}
+
+.disapprovelink a:visited {
+	color: #000;
+}
+
+.disapprovelink a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+.disapprovelink a:hover {
+	text-decoration: none;
+	color: #000 !important;
+}
+.reset-password{ margin:10px 0 0 0px;
+padding:0px;
+}
+.reset-password  span dd{
+float: left;
+   margin: -19px 17px 14px 15px;}
+.reset-password  span dt{  
+  float: left;
+}
+
+.about-us  h4{font-size: 16px;
+color: #0000ff;
+line-height: 30px;}
+.auditor-clientlist-add-wrapper fieldset{
+ margin: 4px 0 0 0px;
+ padding: 10px;
+ margin-bottom: 4px;
+}
+.contentpane {
+    background: url("../images/login-box-bg.png") repeat scroll left top transparent;
+    color: #2D2D2D;
+    font-family: 'eb_garamondregular';
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+	
+}
+
+.clientprofile-wrraper-inlie{
+    width:800px; 
+    margin:0 auto;
+	border:none;
+    padding:0px;}
+.logo a:hover:focus{border: 0px; outline: 0px; outline: medium none;}
+.newlyadded-link a{bottom: 5px; position: relative;}

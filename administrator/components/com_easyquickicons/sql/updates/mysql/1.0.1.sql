@@ -1,0 +1,2 @@
+INSERT INTO `#__easyquickicons` (`id`, `name`, `link`, `published`, `ordering`, `custom_icon`, `icon`, `icon_path`, `access`, `created_date`, `modified_date`, `checked_out`, `checked_out_time`, `publish_up`, `publish_down`, `language`) VALUES
+(NULL, 'Easy QuickIcons Updated', 'index.php?option=com_easyquickicons', 1, 0, 1, '', 'administrator/components/com_easyquickicons/assets/images/icon-48-easyquickicons.png', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '');

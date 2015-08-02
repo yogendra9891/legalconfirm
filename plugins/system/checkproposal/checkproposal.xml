@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+        <name>CheckPropsal</name>
+        <author>Abhishek</author>
+        <creationDate>June 18th, 2012</creationDate>
+        <copyright>InMotion Hosting</copyright>
+        <license>GNU General Public License</license>
+        <authorEmail>abhishek.gupta@daffodilsw.com</authorEmail>
+        <authorUrl>http://www.inmotionhosting.com</authorUrl>
+        <version>1.0</version>
+        <description>PLugin to check expired proposal.</description>
+        <files>
+                <filename plugin="checkproposal">checkproposal.php</filename>
+                <filename>index.html</filename>
+        </files>
+</extension>

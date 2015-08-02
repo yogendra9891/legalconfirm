@@ -1,0 +1,58 @@
+<?php
+/**
+ * @version     1.0.0
+ * @package     com_legalconfirm
+ * @copyright   Copyright (C) 2013. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Abhishek Gupta <abhishek.gupta@daffodilsw.com> - http://
+ */
+
+// No direct accesss.
+defined('_JEXEC') or die;
+
+require_once JPATH_COMPONENT.'/controller.php';
+/**
+ * clientProfile controller class.
+ */
+class LegalconfirmControllerClientprofile extends LegalconfirmController
+{
+
+	/**
+	 * Proxy for getModel.
+	 * @since	1.6
+	 */
+	public function &getModel($name = 'Clientprofile', $prefix = 'LegalconfirmModel')
+	{
+		$model = parent::getModel($name, $prefix, array('ignore_request' => true));
+		return $model;
+	}
+	/*
+	 * function for removing the lawfirm from session..
+	 */
+	public function removelawfirm()
+	{
+
+		$removeLawfirmid = (int)JRequest::getVar('lawfirmid');
+		$app = JFactory::getApplication();
+		$this->ajaxrequestdata = $app->getUserState('com_legalconfirm.selectedlawfirmoffices.data');
+		$this->ajaxrequestclientid = $app->getUserState('com_legalconfirm.clientprofile.clientid');
+		$true = false;
+		$tempdata = array();
+		$i = 0;
+		foreach ($this->ajaxrequestdata as $removedarray)
+		{
+			if($removeLawfirmid == $removedarray['lawfirm'])
+			{
+				unset($removedarray);
+				$true = true;
+			}else
+			{
+				$tempdata[$i]['lawfirm'] = $removedarray['lawfirm'];
+				$tempdata[$i]['lawfirmoffices'] = $removedarray['lawfirmoffices'];
+				$i++;
+			}
+		}
+		$app->setUserState('com_legalconfirm.selectedlawfirmoffices.data',$tempdata);
+		echo $true;
+	}
+}

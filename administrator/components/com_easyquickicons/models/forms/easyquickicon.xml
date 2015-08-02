@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field name="catid"	type="category"
+			extension="com_easyquickicons"
+			label="JCATEGORY"
+			description="COM_EASYQUICKICONS_ICON_FIELD_CATEGORY_DESC"
+			class="inputbox"
+			required="true"
+		/>
+		<field
+			name="name"
+			type="text"
+			label="COM_EASYQUICKICONS_NAME_LABEL"
+			description="COM_EASYQUICKICONS_NAME_DESC"
+			size="40"
+			class="inputbox validate-name"
+			default=""
+			required="true"
+		/>
+		<field
+			name="link"
+			type="text"
+			label="COM_EASYQUICKICONS_LINK_LABEL"
+			description="COM_EASYQUICKICONS_LINK_DESC"
+			size="70"
+			class="inputbox validate-link"
+			default="index.php?option="
+			required="true"
+		/>
+		<field name="componentlink" type="Proversion"
+			label="COM_EASYQUICKICONS_COMPONENT_NAME" 
+			description="COM_EASYQUICKICONS_COMPONENT_NAME_DESC"
+			value="COM_EASYQUICKICONS_ONLY_PRO"
+			class="proversion"
+		/>
+		<field
+			name="icon"
+			type="ImageList"
+			label="COM_EASYQUICKICONS_ICON_LABEL"
+			description="COM_EASYQUICKICONS_ICON_DESC"
+			default="icon-48-clear.png"
+			directory="/administrator/templates/bluestork/images/header"
+			hide_default="1"
+		/>
+		<field
+			name="usecustomicon"
+			type="Proversion"
+			description="COM_EASYQUICKICONS_CUSTOM_ICON_DESC"
+			label="COM_EASYQUICKICONS_CUSTOM_ICON_LABEL"
+			value="COM_EASYQUICKICONS_ONLY_PRO"
+			class="proversion"
+		/>
+		<field
+			name="custompath"
+			type="Proversion"
+			label="COM_EASYQUICKICONS_ICON_PATH_LABEL"
+			description="COM_EASYQUICKICONS_ICON_PATH_DESC"
+			value="COM_EASYQUICKICONS_ONLY_PRO"
+			class="proversion"
+		/>
+		<field
+			name="published"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1">
+			<option
+				value="1">
+				JPUBLISHED</option>
+			<option
+				value="0">
+				JUNPUBLISHED</option>
+			<option
+				value="-2">
+				JTRASHED</option>
+		</field>
+		<field
+			name="target"
+			type="list"
+			label="COM_EASQUICKICONS_TARGET_LABEL"
+			description="COM_EASYQUICKICONS_TARGET_DESC"
+			default="_self"
+			class="inputbox">
+			<option value="_self">COM_EASYQUICKICONS_TARGET_SELF</option>
+			<option value="_blank">COM_EASYQUICKICONS_TARGET_BLANK</option>
+			<option value="_parent">COM_EASYQUICKICONS_TARGET_PARENT</option>
+			<option value="_top">COM_EASYQUICKICONS_TARGET_TOP</option>		
+		</field>
+		<field name="display_in" type="Proversion"
+			label="COM_EASYQUICKICONS_GROUP_LABEL"
+			description="COM_EASYQUICKICONS_GROUP_LABEL_DESC"
+			value="COM_EASYQUICKICONS_ONLY_PRO"
+			class="proversion"
+		/>
+		<field
+			name="description"
+			type="text"
+			class="inputbox"
+			label="COM_EASYQUICKICONS_DESC_LABEL"
+			description="COM_EASYQUICKICONS_DESC_LABEL_DESC"
+			size="70"
+			
+		/>
+		<field name="ordering" type="ordering"
+			description="JFIELD_ORDERING_DESC"
+			label="JFIELD_ORDERING_LABEL"
+		/>
+		<field name="iconpreview" type="Proversion"
+			label="COM_EASYQUICKICONS_PREVIEW_LABEL"
+			description="COM_EASYQUICKICONS_PREVIEW_DESC"
+			value="COM_EASYQUICKICONS_ONLY_PRO"
+			class="proversion"
+		/>
+		<field name="created_date" 
+			type="text" 
+			id="created_date" 
+			class="readonly"
+			label="COM_EASYQUICKICONS_FIELD_CREATED_DATE_LABEL" 
+			size="20" 
+			readonly="true" />
+
+		<field name="modified_date" 
+			type="text" 
+			id="modified_date"
+			class="readonly" 
+			label="COM_EASYQUICKICONS_FIELD_UPDATED_DATE_LABEL" 
+			size="20"
+			readonly="true" />
+	</fieldset>
+</form>

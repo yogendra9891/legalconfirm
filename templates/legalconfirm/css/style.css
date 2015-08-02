@@ -1,0 +1,2686 @@
+                                                                                                                  
+@charset "utf-8";
+
+/* CSS Document */
+@font-face {
+	font-family: 'eb_garamondregular';
+	src: url('../fonts/ebgaramond-webfont.eot');
+	src: url('../fonts/ebgaramond-webfont.eot?#iefix')
+		format('embedded-opentype'), url('../fonts/ebgaramond-webfont.woff')
+		format('woff'), url('../fonts/ebgaramond-webfont.ttf')
+		format('truetype'),
+		url('../fonts/ebgaramond-webfont.svg#eb_garamondregular')
+		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'lucida_sans_unicoderegular';
+	src: url('../fonts/l_10646-webfont.eot');
+	src: url('../fonts/l_10646-webfont.eot?#iefix')
+		format('embedded-opentype'), url('../fonts/l_10646-webfont.woff')
+		format('woff'), url('../fonts/l_10646-webfont.ttf') format('truetype'),
+		url('../fonts/l_10646-webfont.svg#lucida_sans_unicoderegular')
+		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'helveticaregular';
+    src: url('../fonts/helvetica-webfont.eot');
+    src: url('../fonts/helvetica-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetica-webfont.woff') format('woff'),
+         url('../fonts/helvetica-webfont.ttf') format('truetype'),
+         url('../fonts/helvetica-webfont.svg#helveticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+	color:#4c4c4c;
+	background:#fff;
+}
+
+.main-wrapper{
+    width:100%;
+	float:left;
+	background:#fff;
+	}
+	
+h1,h2,h3,h4,h5,h6,p,ul,form,label {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+a {
+	color:#000;
+	text-decoration:none;
+    outline: medium none;
+}
+
+a img{outline: 0; border: 0 none;}
+
+a:hover {
+	text-decoration:underline;
+}
+
+a#button{color:#fff;}
+
+.logo a:hover{ border: medium none;}
+h1 {
+	font-size: 36px;
+	color: #fff;
+}
+
+h2 {
+	font-size: 32px;
+	color: #fff;
+}
+
+h3 {
+	font-size: 18px;
+	color: #4c4c4c;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 1;
+	font-family:helveticaregular;
+}
+
+h5 {
+	font-size: 16px;
+	padding: 0px 0;
+	color: #4c4c4c;
+}
+
+h6 {
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+input,select {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	font-size:14px;
+	/*color:#b9b9b9;*/
+	color:#4C4C4C;
+}
+.button{font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;  font-size:14px;}
+.button:hover{text-decoration:none;}
+.button:focus{padding:0px}
+
+button{font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;  font-size:14px;}
+button:hover{text-decoration:none;}
+button:focus{padding:0px}
+
+textarea{background: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	line-height: 14px;
+	height: 100px;
+	width: 250px;
+	padding: 0 13px;
+	border:1px solid #ccc;
+	}
+
+input[type="text"], input[type="password"] {
+	background: #fff;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	behavior: url(/pie/PIE.htc);
+	line-height: 29px;
+	height: 28px;
+	width: 250px;
+	padding: 0 13px;
+	border:1px solid #ccc;
+}
+
+select {
+	background: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	border:1px solid #ccc;
+	color: #4C4C4C;
+	height: 29px;
+	padding: 5px 0 0 10px;
+	width: 280px;
+}
+
+
+.header-container {
+	width: 100%;
+	float: left;
+	}
+
+.tagline-container {
+	width: 100%;
+	float: left;
+}
+
+.nav-container {
+	width: 100%;
+	float: left;
+	height:39px;
+	background: #060562; /* Old browsers */
+background: -moz-linear-gradient(top, #060562 0%, #0a0b8f 28%, #1111d2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#060562), color-stop(28%,#0a0b8f), color-stop(100%,#1111d2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #060562 0%,#0a0b8f 28%,#1111d2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #060562 0%,#0a0b8f 28%,#1111d2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #060562 0%,#0a0b8f 28%,#1111d2 100%); /* IE10+ */
+background: linear-gradient(to bottom, #060562 0%,#0a0b8f 28%,#1111d2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#060562', endColorstr='#1111d2',GradientType=0 ); /* IE6-9 */
+}
+
+.main-container {
+	width: 100%;
+	float: left;
+	margin-bottom: 0px;
+}
+
+.footer-container {
+	width: 100%;
+	float: left;
+	height: 40px;
+	position:fixed;
+	bottom:0;
+	background: #060562; /* Old browsers */
+background: -moz-linear-gradient(top, #060562 0%, #0a0b8f 28%, #1111d2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#060562), color-stop(28%,#0a0b8f), color-stop(100%,#1111d2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #060562 0%,#0a0b8f 28%,#1111d2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #060562 0%,#0a0b8f 28%,#1111d2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #060562 0%,#0a0b8f 28%,#1111d2 100%); /* IE10+ */
+background: linear-gradient(to bottom, #060562 0%,#0a0b8f 28%,#1111d2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#060562', endColorstr='#1111d2',GradientType=0 ); /* IE6-9 */
+}
+
+.login-container {
+	width: auto;
+	margin: 60px auto 0;
+	display: table;
+}
+
+.header {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0px 0;
+	text-align: center;
+}
+
+.logo {
+	float: left;
+	margin: 0 25px 0 368px;
+	border: medium none;
+}
+
+.heading {
+	float: left;
+}
+
+.tagline {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nav {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nav ul {
+	margin-left: 386px;
+}
+
+.nav li {
+	list-style-type: none;
+	float: left;
+}
+
+.nav a {
+	display: block;
+	padding: 8px 16px;
+	color:#fff;
+}
+
+.main {
+	margin: 36px auto;
+	width: 998px;
+}
+
+.login-box {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 18px 23px;
+	float: left;
+	min-width: 326px;
+	min-height: 200px;
+	border:1px solid #cccccc;
+	background: #efefef; /* Old browsers */
+background: -moz-linear-gradient(top, #efefef 0%, #f8f8f8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#f8f8f8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #efefef 0%,#f8f8f8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #efefef 0%,#f8f8f8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #efefef 0%,#f8f8f8 100%); /* IE10+ */
+background: linear-gradient(to bottom, #efefef 0%,#f8f8f8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-9 */
+}
+
+.login-box input {
+	margin: 15px 0 0;/*margin: 0px 0 0;*/
+}
+.login-box #register1 input {
+	/*margin: 15px 0 0;*/margin: 0px 0 0;
+}
+.divider {
+	background: url(../images/login-divider.png) no-repeat left top;
+	margin: 0 18px;
+	float: left;
+	width: 22px;
+	height: 249px;
+}
+
+.login-box .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 10px;
+	height: 29px;
+	line-height: 29px;
+	display: inline-block;
+	margin: 15px 5px 10px 0;
+	color: #ffffff;
+	cursor: pointer;
+	border: 0;
+	min-width:50px;
+	text-decoration:none;
+	text-align:center;
+	}
+
+.login-box .button:hover {
+	color: #fff;
+	/*background: url(../images/btn-bg-hover.png) repeat-x left top;*/
+	text-decoration:none;
+}
+.login-container a{text-decoration:underline;}
+.login-container a:hover{text-decoration:none;}
+
+
+.footer {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	height: 50px;
+	line-height: 38px;
+}
+
+.footer p {
+	color: #fff;
+}
+
+.register-box {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 18px 23px;
+	min-width: 326px;
+	min-height: 200px;
+	border:1px solid #cccccc;
+	background: #efefef; /* Old browsers */
+background: -moz-linear-gradient(top, #efefef 0%, #f8f8f8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#f8f8f8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #efefef 0%,#f8f8f8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #efefef 0%,#f8f8f8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #efefef 0%,#f8f8f8 100%); /* IE10+ */
+background: linear-gradient(to bottom, #efefef 0%,#f8f8f8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-9 */
+}
+
+.register-box input {
+	margin: 11px 0 0;
+}
+.register-box select{margin:11px 0 0;}
+.divider {
+	background: url(../images/login-divider.png) no-repeat left top;
+	margin: 0 18px;
+	float: left;
+	width: 22px;
+	height: 249px;
+}
+
+.register-box .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 10px 0 10px;
+	height: 29px;
+	line-height: 29px;
+	display: inline-block;
+	cursor: pointer;
+	color:#fff;
+	margin-top: 0px;
+	border: none;
+	outline: none;
+	text-align:center;
+}
+
+.register-box a.button:hover {
+	color: #fff;
+
+}
+
+
+/* ++++++++++++++  pagination  ++++++++++++++ */
+.pagination {
+	margin: 10px 0;
+	padding: 10px 0 10px 0px;
+	clear: both;
+}
+.audito-dashboard{width:100%;
+background:#f8f8f8;
+
+border:1px solid #cccccc;
+border-radius:5px 5px 5px 5px;
+overflow:hidden;
+margin-top:13px;
+padding:0 0 11px 0px;}
+
+.pagination ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	padding: 14px;
+}
+
+.pagination li {
+	display: inline;
+	padding: 5px 10px;
+	text-align: left;
+	margin: 0 3px;
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+	border-radius:5px 5px 5px 5px;
+}
+
+.pagenav {
+
+	clear: both;
+}
+
+.pagination li.pagination-start,.pagination li.pagination-next,.pagination li.pagination-end,.pagination li.pagination-prev
+	{
+
+}
+
+.recently-viewed{width:100%;
+background:#f8f8f8;
+border:1px solid #cccccc;
+border-radius:5px 5px 5px 5px;
+overflow:hidden;
+margin-top:13px;
+padding:0 0 11px 0px;}
+
+.pagination li.pagination-start,.pagination li.pagination-start  span {
+	
+}
+
+p.counter {
+	font-weight: bold;
+}
+
+/* edit by yogendra*/
+.client-searcharea .filter-search-fltlft #filter_search {
+	width: 144px;
+	height: 36px;
+	border: none;
+	outline: none;
+	margin: 0 0 0 10px;
+}
+
+.filter-search-fltlft .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	height: 29px;
+	cursor: pointer;
+	color: #fff;
+	width: 65px;
+	border:none;
+	outline:none;
+	padding-bottom:2px;
+	text-decoration:none;
+}
+
+.filter-search-fltlft a.button:hover {
+	color: #fff;
+	background: url(../images/btn-bg-hover.png) repeat-x left top;
+}
+
+.auditor-clients {
+	width: 400px;
+	background-color: #E0DEDF;
+	margin: 0 auto;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	min-height: 200px;
+	min-width: 326px;
+	padding: 18px 23px;
+}
+
+.auditor-clients-header {
+	background-color: #2D2D2D;
+	height: 25px;
+	color: #FFFFFF;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.auditor-clients-header span {
+	margin-left: 5px;
+}
+
+.client-searcharea {
+    margin:10px 0 0 0px;
+	
+}
+
+.auditor-clientlist-add-wrapper #adminForm {
+	border-radius: 5px 5px 5px 5px;
+}
+
+.auditor-clientlist-add-wrapper #filter-bar #filter_search {
+margin-left: 14px;
+
+    margin-top: 4px;
+    width: 175px;
+}
+
+.auditor-statuses {
+	border: 1px solid #000;
+	width: 400px;
+	height: 400px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	margin-left: 15px;
+}
+
+.auditor-status-header {
+	background-color: #0C1A3E;
+	height: 18px;
+	color: #FFFFFF;
+}
+
+.auditor-reports {
+	border: 1px solid #000;
+	width: 300px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	margin-left: 15px;
+}
+
+.auditor-reports-header {
+	background-color: #0C1A3E;
+	height: 18px;
+	color: #FFFFFF;
+}
+
+.auditor-quicklinks {
+	width: 400px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	min-width: 326px;
+	padding: 18px 23px;
+}
+
+.auditor-quicklinks-header {
+	background-color: #2D2D2D;
+	height: 25px;
+	color: #FFFFFF;
+	border-radius: 5px 5px 5px 5px;
+	line-height: 25px;
+}
+
+.auditor-quicklinks-header span {
+	margin-left: 5px;
+}
+
+.auditor-quicklinks-links li {
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+.recently-view-client {
+	margin-bottom: 3px;
+	margin-top: 10px;
+}
+
+.view-client-list {
+	margin-bottom: 12px;
+	line-height: 25px;
+}
+
+.searched-clients {
+    padding: 5px;
+
+}
+
+.searched-clients .companyname {
+	margin-left: 7px;
+	line-height: 20px;
+}
+
+.auditor-wrapper-divider {
+	margin: 0px;
+	float: left;
+	width: 47px;
+	height: 249px;
+}
+
+.auditor-clients--add-header {
+	background-color: #2D2D2D;
+	height: 25px;
+	color: #FFFFFF;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#filter-bar .submit input {
+	background: url("../images/search-img.png") no-repeat scroll left top
+		transparent;
+	
+	height: 30px;
+	width: 47px;
+	color:#fff;
+	cursor: pointer;
+	line-height:30px;
+}
+.auditor-clientlist-add-wrapper span{font-size:18px; color:#4C4C4C;
+
+}
+
+.delete-client-auditor,span.recent-view-label{font-size:11px; color:#4C4C4C;
+float:right;
+
+}
+
+.counter,.recently-viewed{display:none;}
+
+.opreration_button {
+	float: right;
+	width: 206px;
+	margin-right: 15px;
+}
+
+
+
+.opreration_button .add-client-auditor {
+	background: url("../images/btn-bg.png") repeat-x scroll right top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+    height: 30px;
+	width: 100px;
+	float: left;
+	margin-right: 0px;
+	color: #FFFFFF;
+	cursor: pointer;
+	margin-bottom: 5px;
+	float:left;
+}
+
+.add-client-auditor a {
+   color: #FFFFFF;
+   display: block;
+   height:29px;
+   line-height: 29px;
+   /*margin-left: 2px;*/
+   padding: 0;
+   text-align: center;
+   text-decoration:none;
+}
+.opreration_button .delete-client-auditor input {
+	background: url("../images/btn-bg.png") repeat-x scroll right top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+	height: 29px;
+	width: 100px;
+	float: left;
+	margin-right: 0px;
+	color: #FFFFFF;
+	cursor: pointer;
+	margin-bottom: 5px;
+	padding-bottom:2px;
+	float:right;
+}
+
+.opreration_button span{}
+
+.auditor-clientlist-add-wrapper #adminForm .adminlist .list-footer ul {
+	padding-left: 16px;
+}
+
+.auditor-clientlist-add-wrapper #adminForm #adminformclass {
+	text-align: left;
+	padding-left:10px;
+}
+
+.auditor-clients--add-header {
+	background-color: #2D2D2D;
+	height: 25px;
+	color: #FFFFFF;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.auditor-clients-company-information {
+	
+}
+
+.auditor-clients-signer-information {
+	
+}
+
+.clientcompnayinput {
+	
+}
+
+.companyinfoclient {
+	margin-left: 3px;
+}
+
+.companyinfoclient label.client-company {
+	width: 250px;
+	margin-right: 103px;
+}
+
+.companyinfoclient label.client-engagementno {
+	width: 250px;
+	margin-right: 68px;
+}
+
+.companyinfoclient label.client-website {
+	width: 250px;
+	margin-left: 9px;
+}
+
+.companyinforenagement input {
+	background: url("../images/input-bg.png") repeat-x scroll left top
+		transparent;
+	border: 0 none;
+	border-radius: 5px 5px 5px 5px;
+	color: #888888;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 11px;
+	margin-left: 3px;
+	margin-bottom: 3px;
+	width: 185px;
+}
+
+.first-information { 
+	width: 313px;
+	height: auto;
+	float: left;
+	display: inline;
+	margin-bottom: 10px;
+	padding-bottom: 3px;
+	margin-left: 4px;
+	padding-left: 4px;
+}
+
+.second-information { 
+	width: 313px;
+	height: auto;
+	float: left;
+	display: block;
+	margin-bottom: 10px;
+	padding-bottom: 3px;
+	margin-left: 4px;
+	padding-left: 10px;
+}
+
+.first-information label {
+	float: left;
+	margin-left: 5px;
+	margin-top: 4px;
+	width: 80px;
+	line-height: 37px;
+}
+
+.first-information input {
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 193px;
+}
+
+.second-information label {
+	float: left;
+	margin-left: 5px;
+	margin-top: 4px;
+	width: 75px;
+	clear: both;
+	line-height: 37px;
+}
+
+.second-information input {
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 197px;
+}
+
+.requiredfield {
+	color: red;
+}
+
+.add-client-button .submit input {
+	background: url("../images/btn-bg.png") repeat-x scroll left top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+	height:29px;
+	width: 97px;
+	padding-bottom:2px;
+	float: left;
+	cursor: pointer;
+	margin-right: 4px;
+	color: #FFF;
+}
+
+
+.add-client-button .add-client-auditor {
+	background: url("../images/btn-bg.png") repeat-x scroll left top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+	height: 37px;
+	width: 97px;
+	float: left;
+	cursor: pointer;
+	margin-right: 4px;
+	color: #FFF;
+	float:left;
+}
+
+
+.add-client-button .requiredfield {
+	float: right;
+	width: 226px;
+	margin: 5px;
+}
+
+.add-client-button-submit {
+	float: right;
+	width: 259px;
+}
+
+.second-information .err {
+	color: red;
+	font-size: 15px;
+	margin-left: 87px;
+}
+
+.clientprofile-divider {
+	float: left;
+	height: 249px;
+	margin: 0 8px;
+	width: 8px;
+}
+
+.clientprofile {
+	width: 300px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	padding: 18px 23px;
+}
+
+.auditor-clients-header {
+	background-color: #1919ff;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+.auditor-clients-header span {
+	margin: 5px;
+}
+
+.lawyerarea {
+	width: 300px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	padding: 18px 23px;
+}
+
+.lawyerarea-header {
+	background-color: #1919FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+.lawyerarea-header span {
+	margin-left: 5px;
+}
+
+.lawyerarea .submit #button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	margin-top: 5px;
+	height: 37px;
+	line-height: 37px;
+	display: inline-block;
+	text-align:center;
+	width:110px;
+}
+
+.authorizationcode {
+	width: 300px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	margin-top: 24px;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	padding: 18px 23px;
+}
+
+.authorizationcode-header {
+	background-color: #1919FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+
+.authorizationcode-header span {
+	margin-left: 5px;
+}
+
+.authorizationcode .submit button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 12px 2px 12px;
+	margin-top: 5px;
+	height: 37px;
+	line-height: 37px;
+	display: inline-block;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	width: 184px;
+}
+
+.auditornotes {
+	width: 250px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	padding: 18px 23px;
+	margin-top: 24px;
+}
+
+.auditornotes-header {
+	background-color: #2D2D2D;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+.auditornotes-header span {
+	margin-left: 5px;
+}
+
+.auditornotes textarea {
+	height: 130px;
+	margin-left: 0px;
+	margin-top: 4px;
+	width: 231px;
+}
+
+#deletesigner {
+
+}
+
+.clientname {
+	line-height: 40px;
+	 margin-left: 22px;
+}
+
+.clientname .submit {
+	float: right;
+	margin-right: 28px;
+}
+
+.clientname .submit #button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	height: 29px;
+	line-height: 30px;
+	display: inline-block;
+}
+
+.signerarea .submit #button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	height: 37px;
+	line-height: 37px;
+	display: inline-block;
+}
+
+.companyname span {
+
+}
+
+.company-name-result span {
+
+
+}
+.companywebsite span{}
+.auditornotes .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	height: 37px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 37px;
+	display: inline-block;
+	color: #fff;
+	margin-right: 16px;
+	text-decoration:none;
+}
+
+.auditornotes .submit a {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	height: 37px;
+	color: #fff;
+	line-height: 37px;
+	display: inline-block;
+}
+
+.auditor-clients--add-header {
+	background-color: #1919FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+}
+
+.auditor-clients--add-header span {
+	margin-left: 5px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.edit-client-company {
+	float: right;
+}
+
+.edit-client-company .submit input {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 4px;
+	margin-bottom: 3px;
+	padding-bottom:2px;
+	cursor: pointer;
+	height: 29px;
+	width: 105px;
+	color: #fff;
+	line-height: 29px;
+	display: inline-block;
+	padding-bottom:2px;
+}
+
+.clientprofileproposal-header {
+	background-color: #1919FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+.clientprofileproposal-header span {
+	margin-left: 5px;
+}
+
+.clientprofileproposal .filter-search-fltlft #filter_search {
+	height: 28x;
+	width:235px;
+	margin-left: 0px;
+	margin-bottom: 3px;
+}
+
+.clientprofileproposal #adminForm .pagination ul {
+	margin-top: 10px;
+}
+
+.clientprofileproposal .submit a {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 4px;
+	margin-bottom: 10px !important;
+	margin-top: 5px;
+	float: right;
+	text-align: center;
+	cursor: pointer;
+	width: 105px;
+	color: #fff;
+	line-height: 29px;
+}
+
+.clientprofileproposal .adminlist #adminformclass {
+	text-align: center;
+}
+
+.clientprofileproposal .adminlist #adminformclass td {
+	text-align: center;
+}
+
+.lawfirmoffices-header {
+	background-color: #1919FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+.lawfirmofficelocation{margin-top: 10px;}
+.lawfirmoffices .submit a {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	padding-bottom:2px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 4px;
+	margin-top: 5px;
+	margin-bottom: 3px;
+	float: right;
+	text-align: center;
+	cursor: pointer;
+	width: 105px;
+	color: #fff;
+	line-height: 29px;
+	padding:0;
+}
+
+.lawfirmofficelocation .adminlist {
+	text-align: center;
+}
+
+.alreadyselectedlawfirms .adminlist tr {
+	text-align: left;
+}
+
+.clientprofileproposal .adminlist tr {
+	text-align: left;
+}
+
+.lawfirmoffices-header span {
+	margin-left: 5px;
+}
+
+.lawfirmoffices .adminlist tr {
+	text-align: left;
+}
+
+.add-more-Lawfirm {
+	max-height: 150px;
+	margin-top: 5px;
+	padding: 3px;
+}
+
+.clientprofileproposal #adminForm table#adminList {
+	width: 660px;
+}
+
+.alreadyselectedlawfirms .adminlist .rownew td {
+	
+}
+
+.alreadyselectedlawfirms .adminlist {
+	width: 660px;
+}
+
+.nowselectedlawfirms .adminlist .rownew td {
+	width: 0px !important;
+}
+
+.nowselectedlawfirms table.adminlist {
+	width: 660px;
+}
+
+.auditoreditnotes .submit .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	padding-bottom:2px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 2px;
+	height: 37px;
+	margin-bottom: 3px;
+	margin-top: 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	width: 105px;
+	color: #fff;
+	line-height: 37px;
+	float: left;
+	margin-bottom: 3px;
+	text-decoration:none;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+.auditoreditnotes {
+	float: left;
+}
+
+.auditoreditbuttonwrapper {
+	float: right;
+}
+
+.auditernotesviewwrraper .submit a {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	padding-bottom:2px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 4px;
+	margin-bottom: 3px;
+	float: right;
+	text-align: center;
+	cursor: pointer;
+	width: 70px;
+	color: #fff;
+	line-height: 37px;
+}
+
+.auditornotes-view {
+	
+}
+
+.auditornotes-button {
+	float: right;
+}
+
+.first-information .errzip {
+	float: left;
+}
+
+.addsigner-new .submit .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	padding-bottom:2px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 2px;
+	height: 29px;
+	margin-bottom: 3px;
+	margin-top: 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	width: 97px;
+	color: #fff;
+	line-height: 37px;
+	float: left;
+	margin-bottom: 3px;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.addsigner-new-requiredfield {
+	float: right;
+	width: 220px;
+}
+
+fieldset {
+	border: 1px solid #858585;
+    margin-bottem: 20px;
+    padding: 10px;
+}
+
+legend {
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.auditornotesedit textarea {
+	width: 392px;
+}
+
+.initiate {
+	width: 300px;
+	height: 300px;
+	background-color: #E0DEDF;
+	float: left;
+	display: block;
+	background: url(../images/login-box-bg.png) repeat left top;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	min-height: 200px;
+	padding: 18px 23px;
+	margin-top: 24px;
+}
+
+.initiate-header {
+	background-color: #1919FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+.initiate-header span {
+	padding-left: 5px;
+}
+
+.initiate .submit a {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	padding-bottom:2px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	margin-right: 4px;
+	margin-top: 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	width: 156px;
+	color: #fff;
+
+	line-height: 37px;
+}
+
+.non-member-area .submit .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	padding-bottom:2px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	height: 29px;
+	margin-bottom: 3px;
+	text-align: center;
+	cursor: pointer;
+	width: 105px;
+	line-height: 29px;
+	color: #fff;
+	border: none;
+	text-decoration:none;
+}
+
+.button2-left .blank .templatesave {
+	padding: 0 6px;
+	width: 70px;
+	margin-bottom: 10px;
+}
+
+.authorizationcode .submit a {
+	background: url("../images/btn-bg.png") repeat-x scroll left top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	cursor: pointer;
+	float: right;
+	line-height: 37px;
+	margin-bottom: 3px;
+	margin-right: 116px;
+	margin-top: 5px;
+	padding: 0 12px;
+	text-align: center;
+	width: 160px;
+}
+
+.auditor-clientlogs-header {
+	background-color: #1919FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+	line-height: 25px;
+}
+
+.auditor-clientlogs-header span {
+	padding: 5px;
+}
+
+.auditor-clientlogs-lawfirm-header {
+	background-color: #2D2D2D;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	height: 25px;
+}
+
+.auditor-clientlogs-lawfirm-header span {
+	padding-left: 5px;
+}
+
+.auditor-clientlogs-lawfirm-wrapper .submit a {
+	background: url("../images/btn-bg.png") repeat-x scroll left top
+		transparent;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	cursor: pointer;
+	float: right;
+	line-height: 37px;
+	margin-bottom: 3px;
+	margin-top: 5px;
+	padding: 0 12px;
+	text-align: center;
+	width: 71px;
+}
+
+.lawfirm-task-details td {
+	text-align: center;
+}
+
+.auditor-clientlogs-wrapper .adminlist td {
+	text-align: center;
+	width: 150px;
+}
+
+.auditor-clientlogs-wrapper .adminlist .tfoot td {
+	text-align: left;
+}
+
+.auditor-clientlogs-wrapper .adminlist .pagination ul {
+	margin-top: 10px;
+}
+
+.contact-form {
+    margin: 20px 0 0;
+}
+.contact-address{
+    margin: 18px 0 0;
+	padding:0px 0 0 0px;
+}
+
+.contact-form-llc #contact-form input#jform_contact_email{
+background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    height: 29px;
+    line-height: 29px;
+    padding: 0 13px;
+    width: 250px;
+}
+
+.contact-form-llc #contact-form button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	padding-bottom:2px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	height: 29px;
+	margin-bottom: 3px;
+	text-align: center;
+	cursor: pointer;
+	width: 90px;
+	line-height: 29px;
+	color: #fff;
+	border: medium none;
+	outline:none;
+
+}
+
+
+.contact-form-llc #contact-form dt {
+	float: left;
+	padding-top: 10px;
+	width: 134px;
+}
+
+.contact-form-llc #contact-form dd {
+	padding-top: 10px;
+	float:left;
+	width:68%;
+}
+
+.clientprofileproposal table#lawfirms-list {
+	width: 660px;
+}
+
+.clientprofileproposal table#tobeselectedlawfirms {
+margin:0; padding:0;
+
+}
+
+/*
+code for the table hover..
+*/
+.auditor-clientlist-add-wrapper #adminForm th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 15px 0 15px 20px;
+	background: #F8F8F8;
+}
+
+.auditor-clientlist-add-wrapper #adminForm #adminformclass td {
+	padding: 8px;
+	background: #F8F8F8;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	padding:10px 0 10px 21px;
+}
+.auditor-clientlist-add-wrapper #adminForm  tr#adminformclass:hover td {
+
+	/*color: #000 !important;*/
+}
+
+.auditor-clientlist-add-wrapper #adminForm  tr#adminformclass:hover td a
+	{
+/*	color: #000 !important;*/
+}
+
+.pagination .limit {
+	text-align: left;
+}
+
+.pagination .counter {
+	float: left;
+	margin-top: 15px;
+}
+
+.clientprofileproposal .adminlist  tr.rownew:hover td a {
+	color: #000 !important;
+}
+
+.clientprofileproposal .adminlist tr#lawfirms-select td {
+	padding: 8px;
+	background: #8686FD;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.clientprofileproposal .adminlist tr#lawfirms-select:hover td {
+	background: #5b5bf4;
+	color: #000 !important;
+}
+
+.clientprofileproposal #adminForm #lawfirms-list #adminformclass td {
+	padding: 8px;
+	background: #8686FD;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.clientprofileproposal #adminForm #lawfirms-list tr#adminformclass:hover td
+	{
+	background: #5b5bf4;
+	color: #000 !important;
+}
+
+.lawfirmoffices .lawfirmofficelocation table.adminlist th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #080878;
+	color: #FFFFFF;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.lawfirmoffices .lawfirmofficelocation table.adminlist td {
+	padding: 8px;
+	background: #8686FD;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.lawfirmoffices .lawfirmofficelocation table.adminlist tr#classsid:hover td
+	{
+	background: #5b5bf4;
+	color: #000 !important;
+}
+
+.lawfirmoffices #adminForm table.adminlist th {
+	font-size: 13px;
+		font-weight: normal;
+	padding: 8px;
+	color:#000;
+	border-top:2px solid #CCC;
+	border-bottom:2px solid #CCC;
+	}
+
+.lawfirmoffices #adminForm table.adminlist tr.rowclosed	td {
+	padding: 8px;
+	font-weight: normal;
+	border-top:2px solid #CCC;
+	border-bottom:2px solid #CCC;
+}
+
+.lawfirmoffices #adminForm table.adminlist tr.rowclosed:hover td {
+}
+
+.auditor-clientlogs-wrapper #adminForm table.adminlist th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px 20px;
+	color:#000;
+	border-bottom: 2px solid #CCC;
+}
+
+.auditor-clientlogs-wrapper #adminForm table.adminlist tr#adminformclass td
+	{
+	padding: 8px 20px;
+	border-bottom: 2px solid #CCC;
+	border-top: 2px solid #CCC;
+	text-align:left;
+}
+
+.auditor-clientlogs-wrapper #adminForm table.adminlist tr#adminformclass:hover td a
+	{
+	color: black;
+	cursor: pointer;
+}
+
+
+.about-us {
+    background: linear-gradient(to bottom, #EFEFEF 0%, #F8F8F8 100%) repeat scroll 0 0 transparent;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px 5px 5px 5px;
+	padding: 14px;
+	
+}
+
+.contact {
+	background: linear-gradient(to bottom, #EFEFEF 0%, #F8F8F8 100%) repeat scroll 0 0 transparent;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px 5px 5px 5px;
+	padding: 14px;
+	overflow:hidden;
+	margin:0 auto;
+	width:75%;
+}
+
+.contactform-form{width:57%; float:right;}
+.contactaddress-info{width:35%; float:left;
+padding:0 0 0 15px;}
+
+.contact-address span .jicons-icons{margin-top:10px; font-style:normal;}
+.contact-street,.contact-suburb,.contact-state,.contact-postcode,.contact-country{margin-top:10px; font-style:normal; padding:5px 0 0 0px;}
+
+.logout-profile-wrraper {
+	float: right;
+	margin-top: -32px;
+}
+
+.logout-button {
+	display: inline;
+	margin: 11px;
+	padding: 8px 16px;
+}
+
+.profile-page {
+	display: block;
+	float: left;
+}
+
+.lawfirm-task-details table {
+	width: 660px;
+}
+
+.lawfirm-task-details table th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #080878;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.lawfirm-task-details table tr.findtemplate td {
+	padding: 8px;
+	background: #9f9ff7;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.lawfirm-task-details table tr.findtemplate:hover td {
+	background: #7a7afd;
+	color: #000 !important;
+}
+
+.recently-view-client a {
+	margin-top: 48px !important;
+	padding-top: 5px !important;
+	width: 45px;
+	line-height: 25px !important;
+}
+.clientprofile div{line-height: 25px;}
+/* edit end by yogendra*/ /** Abhishek**/
+.registration2 fieldset {
+	border: 0 none;
+	margin-bottom: 20px;
+	padding: 10px 0;
+}
+
+.registration2 legend {
+	font-size: 16px;
+	font-weight: normal;
+	margin-left: 0px;
+}
+
+.err {
+	color: red;
+	font-size: 13px;
+	display:block;
+	clear:both;
+}
+
+.textbold {
+	font-weight: bold;
+}
+
+.unpin1 {
+	display: none;
+}
+
+.pin1 {
+	display: none;
+}
+
+.pin input {
+	color: #9B9B9B;
+	background:none;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 3px 0;
+	margin-top:0;
+}
+
+.pin2 input {
+	 color: #9B9B9B;
+	background:none;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 3px 0;
+	margin-top:0;
+}
+
+.unpin2 input {
+ color: #9B9B9B;
+background:none;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 3px 0;
+	margin-top:0;
+}
+
+.unpin input {
+ color: #9B9B9B;
+background:none;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 3px 0;
+	margin-top:0;
+}
+
+ul.simplePagerNav li {
+	display: block;
+	float: left;
+	font-family: georgia;
+	font-size: 14px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+li.currentPage {
+	background: none repeat scroll 0 0 #FF9500;
+}
+
+.sbox-btn-close {
+	background: url("../images/closebox.png") no-repeat scroll center center
+		transparent;
+	border: medium none;
+	height: 30px;
+	position: absolute;
+	right: 0;
+	top: -2px;
+}
+
+.black_overlay {
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity =     80);
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	padding: 4px;
+	background-color: white;
+	z-index: 1002;
+
+}
+
+.pagination1 select {
+	background: url("../images/input-bg.png") repeat-x scroll left top
+		transparent;
+	border: 0 none;
+	border-radius: 5px 5px 5px 5px;
+	color: #888888;
+	height: 36px;
+	padding: 10px;
+	width: 140px;
+	margin: 5px;
+}
+
+.pagination select {
+	border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+	color: #888888;
+	height: 36px;
+	padding: 8px;
+	width: 58px;
+	margin: 5px;
+}
+
+
+.register-box table.alllist tr:hover td {
+}
+
+.auditor-clientlist-add-wrapper #adminForm  tr#adminformclass:hover td a
+	{
+	color: #000 !important;
+}
+
+.pdfwidth {
+	width: 115px;
+	float: left;
+}
+
+.editprofile td {
+	width: 90px;
+}
+
+table {
+	width: 100%;
+}
+
+.assignedtask {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse !important;
+}
+
+.disapprovelink a:visited {
+	color: #000;
+}
+
+.disapprovelink a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+.disapprovelink a:hover {
+	text-decoration: none;
+	color: #000 !important;
+}
+.reset-password{ margin-top: 23px;
+padding:0px;
+}
+.reset-password  span dd{
+float: left;
+   margin: -19px 17px 14px 15px;}
+.reset-password  span dt{  
+  float: left;
+  margin-top: -10px;
+}
+
+.about-us  h4{font-size: 16px;
+
+
+color: #4C4C4C;
+line-height: 30px;}
+.auditor-clientlist-add-wrapper fieldset{
+ margin: 4px 0 0 0px;
+ padding: 10px;
+ margin-bottom: 4px;
+ background: linear-gradient(to bottom, #EFEFEF 0%, #F8F8F8 100%) repeat scroll 0 0 transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EFEFEF', endColorstr='#F8F8F8', GradientType=0 );
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+ 
+}
+.contentpane {
+    background: url("../images/login-box-bg.png") repeat scroll left top transparent;
+    color: #2D2D2D;
+    margin: 0;
+    padding: 0;
+}
+
+.clientprofile-wrraper-inlie{
+    width:800px; 
+    margin:0 auto;
+    padding:0px;}
+.logo a:hover:focus{border: 0px; outline: 0px; outline: medium none;}
+.newlyadded-link a{bottom: 5px; position: relative; font-weight:bold;}
+.client-step{float: right; position: relative; top: 134px;}
+.lawyer-step{float: right; position: relative; top: 217px;}
+.authorization-step{float: right; position: relative; top: 170px;}
+.attorney-step{float: right; position: relative; top: 169px;}
+.clientprofile-inner{height: 154px;}
+.lawyer-inner{height: 71px;}
+.authorization-inner{height: 118px;}
+.initaite-inner{height: 118px;}
+.add-more-Lawfirm tr.rownew th{padding: 3px;}
+.add-more-Lawfirm tr.rownew td{padding: 3px;}
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    display:none;
+    text-indent:-9999px;
+    background: url('../images/icon_top.png') no-repeat;
+}
+table.adminlist th a img{padding-left: 5px; border:none;} 
+.register-box table.alllist th a img{padding-left: 5px; border:none;}
+.erremail2{
+    color: red;
+    font-size: 15px;
+    margin-left: 87px !important;
+}
+.erremail1{
+    color: red;
+    font-size: 15px;
+    margin-left: 87px;
+	float:none;
+	display:block;
+}
+.errzip{color: red;
+    font-size: 15px; margin-left: 90px;}
+.second-information label.clientemail2 {
+
+    line-height: 17px;
+}
+#clienttemplate #editor-xtd-buttons{display: none;}
+#clienttemplate .toggle-editor .blank{display: none;}
+
+#mailtemplate #editor-xtd-buttons{display: none;}
+#mailtemplate .toggle-editor .blank{display: none;}
+
+
+#contact-form #emailerr1{color: red;
+    font-size: 15px;
+    margin-left: 2px;}
+.reset-password-button{
+    margin-left: 133px; 
+    margin-top: -16px;}
+.email-reset-class{float: left; padding-top: 10px;}
+.reset-password label{line-height: 36px;}
+.disbutton{
+color:#fff !important;
+}
+.disapprovelink a.button:hover{
+  text-decoration:none;
+  color:#fff !important;
+  background: url("../images/btn-bg.png") repeat-x scroll left top transparent !important;
+}
+.alllist select option{
+background:#fff;
+color:#888888;
+}
+.first-information select{float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 218px;}
+.clientname a#button {
+    background: url("../images/btn-bg.png") repeat-x scroll left top transparent;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 22px;
+}
+/*css written on 1st aug 2013 for design customization*/
+
+.logout-profile-wrraper a{color:#fff;}
+.clientprofileproposal a{color:#fff;}
+.alllist a{color:#fff;}
+
+.main-container .jicons-icons{
+       float:left;
+	     padding: 5px 10px 0 0;
+       }
+
+.main-container address{
+       padding:5px;
+       }
+	   .recently-view-client label{font-weight:bold; float:left; width:100%; margin:5px 0;}
+.view-client-list label a{font-weight:bold; }
+/*#system-message > dd > ul > li {
+    line-height: 0.8em !important;
+}*/
+.auditor-clientlist-add-wrapper #adminForm table.adminlist th a{color: #000000;}
+.auditor-clientlist-add-wrapper #adminForm .adminlist .list-footer .limit{/*padding-left: 12px;*/}
+.auditor-clientlist-add-wrapper #adminForm .adminlist .list-footer .counter{padding-left: 12px;}
+.slimScrollDiv { 
+    padding-bottom: 10px; }
+.searched-clients div.companyname:hover{background: #7a7afd; width: 375px;}
+.lawyer-inner .submit1 a{margin-top: 5px; margin-bottom: 5px;}
+.lawyer-inner .submit a{background: url("../images/btn-bg.png") repeat-x scroll left top transparent;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    height: 37px;
+    color: #FFF;
+    line-height: 37px;
+    margin-top: 5px;
+    width: 110px;
+    text-align: center;
+    padding: 0 22px;}
+.addmore-wrraper{margin-top: 5px;}
+.clientprofile-inner .testclass{margin-top: 10px;}
+.companyinforenagement{margin-top: 3px;}
+.changeadmin{
+-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding-left: 18px;
+	padding-top: 15px;
+	
+
+}
+.changeadmin .button {
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 22px;
+	height: 29px;
+	line-height: 37px;
+	display: inline-block;
+	cursor: pointer;
+	color:#fff;
+	margin-top: 0px;
+	border: none;
+	outline: none;
+}
+
+.changeadmin input {
+    margin: 11px 0 0;
+}
+    .etabs { margin: 0; padding: 0; }
+    .tab { display: inline-block; zoom:1; *display:inline; background: #eee; border: solid 1px #999; border-bottom: none; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; }
+    .tab a { font-size: 14px; line-height: 2em; display: block; padding: 0 10px; outline: none; color: black;}
+    .tab a:hover { text-decoration: underline; }
+    .tab.active { background: #fff; padding-top: 6px; position: relative; top: 1px; border-color: #666; }
+    .tab a.active { font-weight: bold; }
+    .tab-container .panel-container { background: #fff; border: solid #666 1px; padding: 10px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }
+    .panel-container { margin-bottom: 10px; }
+    .pending-received a{color: black;}
+
+
+#system-message > .warning > ul{background-color: #060562 !important; padding:5px;}
+
+#adminformclass > td {
+    padding: 10px 20px;
+}
+
+
+#recently-viewed > span {
+    float: left;
+    padding: 10px 21px;
+}
+.row-recentlyviewed > td {
+    padding-left: 68px !important;
+    text-align: left;
+}
+.auditor-clientlist-add-wrapper span.filter-search fltlft span{margin-left:10px;}
+
+/* work start by deepak */
+
+.auditor-clientlist-add-wrapper .clientlist-name { margin-left:18px;}
+
+.list-footer .limit { padding-left:18px !important; }
+.list-footer ul {  }
+.list-footer ul li .pagenav { color:#b9b9b9 !important; }
+.opreration_button { padding: 10px 0 40px; }
+.adminlist #adminformclass { margin:0; padding:0 !important; }
+#adminformclass th{ text-align:left; }
+#filter-bar{ padding-left:18px;}
+#filter-bar .submit input{ }
+.first-information {
+	width: 313px;
+	height: auto;
+	float: left;
+	display: block;
+	margin-bottom: 10px;
+	padding-bottom: 3px;
+	margin-left: 4px;
+	padding-left: 10px;
+}
+.first-information label {
+	float: left;
+	margin-left: 5px;
+	margin-top: 4px;
+	width: 81px;
+	clear: both;
+	line-height: 37px;
+}
+
+.first-information input {
+	float: left;
+	margin-left: 5px;
+	margin-top: 8px;
+	width: 190px;
+}
+
+.first-information .err {
+	color: red;
+	font-size: 15px;
+	margin-left: 122px;
+}
+.first-information label.clientemail2 {
+
+    line-height: 17px;
+}
+
+.contentpane .add-client-button-submit { width:232px;  }
+.contentpane .auditor-clients--add-header{ font-size:18px; background:none; color:#4C4C4C;}
+
+.contentpane { padding:10px; background: #f0f0f0;}
+.contentpane .auditor-clients-company-information{ margin:5px 0 10px 15px;}
+.contentpane .auditor-clients-company-information span{ margin-left:3px; font-size:15px; line-height:20px; }
+.contentpane .auditor-client-add-wrapper > span{ margin-left:20px; font-size:15px; line-height:28px; }
+.contentpane .add-client-button .requiredfield{ margin:5px 3px 5px 0; }
+.contentpane .auditor-clients--add-header span{ margin-left:20px;}
+.contentpane label.client-engagementno{ margin-right:62px; }
+.contentpane .second-information input { margin-top:8px; }
+.contentpane input[type="text"], input[type="password"]{ -webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;}
+
+.contentpane .companyinforenagement input{  background: none repeat scroll 0 0 hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 80%);
+
+    height: 28px;
+    line-height: 29px;
+    padding: 0 13px;
+    width: 180px; }
+	
+.contentpane .first-information select{ -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; }
+
+#tab-container .tab a {
+    border-right: 1px solid #CCC;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    outline: medium none;
+	padding:0 20px;  
+}
+
+#tab-container a.sentoattorney{ border:none; }
+
+#tab-container{ 
+ -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border:2px solid #CCC;
+background:#f0f0f0; 
+}
+
+#tab-container .tab { border:none; margin:0; padding:12px 0; background:none; }
+#tab-container .etabs { 
+background: url("../images/gradient.jpg") repeat-x;
+border-bottom:2px solid #CCC;
+-moz-border-radius: 10px 10px 0 0;
+-webkit-border-radius: 10px 10px 0 0;
+border-radius: 10px 10px 0 0;
+   
+}
+#tab-container .client_profile{ background:#e8e8e8; /*border:0; margin-left: -3px;*/ 	 border-radius: 10px;
+	 -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;}
+#tab-container .clientprofile{ float:none; background:#fff; }
+.panel-container{ background:#f0f0f0; }
+.panel-container .companyname{ background:#e8e8e8; border:2px 0 2px 0 solid #CCC; font-size:14px; padding: 8px 20px; margin-top:10px; border-top:2px solid #CCC; border-bottom:2px solid #CCC; }
+.panel-container .company-name-result{ background:#e8e8e8; border:2px 0 2px 0 solid #CCC; font-size:14px; padding: 8px 20px; margin-top:10px; border-top:2px solid #CCC; border-bottom:2px solid #CCC; }
+.panel-container .companywebsite{ background:#e8e8e8; border:2px 0 2px 0 solid #CCC; font-size:14px; padding: 8px 20px; margin-top:10px; border-top:2px solid #CCC; border-bottom:2px solid #CCC; }
+.panel-container .signerarea { background:#e8e8e8; border:2px 0 2px 0 solid #CCC; font-size:14px; padding: 8px 20px; margin-top:10px; border-top:2px solid #CCC; border-bottom:2px solid #CCC; }
+label.company-name{ width:45%; float:left;}
+.edit-button{ float:left; padding:0 10px; margin-top:2px; }
+
+.clientname .submit{  margin-top: 10px; }
+
+
+.delelte-signer{ float:left; margin-top:2px;}
+.panel-container .submit{ background: url("../images/btn-bg.png") repeat-x scroll left top transparent;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    height: 29px;
+    line-height: 30px;
+    padding: 0 18px;
+	color:#FFFFFF;
+	margin:10px 0 10px 888px;}
+.panel-container .submit a#next-attorney{color:#fff;}
+.panel-container .submit a img{ margin-left:4px;}
+
+.companyinfoclient label.client-company {
+    width: 165px; float:left; margin:0;
+	 }
+	.requiredfield{ line-height:32px;}
+	
+	.edit-client-company .submit{ margin-right:188px; }
+	
+.client-proposal-logs {
+    padding: 20px;
+	border-bottom:2px solid #CCC;
+}
+
+.authorization-inner .submit{
+ background: url("../images/btn-bg.png") repeat-x scroll right top transparent;
+    border-radius: 5px 5px 5px 5px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    margin:0 0 0 730px;
+    width: 120px;}
+	
+.authorization-inner #request-form-button{
+color: hsl(0, 0%, 100%);
+background:none;
+border:0;
+    display: block;
+    line-height: 23px;
+    margin-left: 8px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+	cursor:pointer;
+}
+
+.authorization-inner #request-form-button:hover{ /*text-decoration:underline;*/ }
+
+#tab-container .client-logs-next{background: url("../images/btn-bg.png") repeat-x scroll left top transparent;
+    border-radius: 5px 5px 5px 5px;
+	width:75px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    height: 29px;
+    line-height: 30px;
+    margin: 0 0 0 20px;
+    padding: 0 0;}
+	
+#tab-container .client-logs-next a{  color: hsl(0, 0%, 100%);
+    display: block;
+    line-height: 23px;
+    margin-left: 5px;
+    padding-top: 2px;
+    text-align: center;
+    text-decoration: none;
+	width:70px;}
+	
+#tab-container .client-logs-next a:hover{ /*text-decoration:underline;*/ }
+
+.authorization-inner{min-height:60px;}
+.lawfirmlogs-pending{ min-height:310px; }
+.lawfirmlogs-pending tr#adminformclass{border-bottom:2px solid #CCC; border-top:none;}
+
+.lawfirmlogs-pending .pending-received{ float:right; }
+.lawfirmlogs-pending .pending-received a{ margin-right:15px;}
+.lawfirmlogs-pending .pending-received a.attorney-logs-active{ font-weight:bold;}
+.lawfirmlogs-pending .submit{
+ background: url("../images/btn-bg.png") repeat-x scroll left top transparent;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    line-height: 29px;
+    text-align: center;
+    margin:0 35px 30px 0;
+    width: 120px;}
+	.lawfirmlogs-pending .submit a{ color:#FFF;}
+.lawfirmlogs-received{ min-height:310px; }
+
+.lawfirmlogs-received .pending-received{ float:right;}
+.lawfirmlogs-received tr#adminformclass{border-bottom:2px solid #CCC; border-top:none;}
+
+.lawfirmlogs-received .pending-received a{ margin-right:15px;}
+.lawfirmlogs-received .pending-received a.attorney-logs-active{ font-weight:bold;}
+.lawfirmlogs-received .submit{
+ background: url("../images/btn-bg.png") repeat-x scroll left top transparent;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    line-height: 29px;
+    text-align: center;
+    margin:0 30px 30px 0;
+    width: 120px;}
+.lawfirmlogs-received .submit a{ color:#FFF;}
+	
+.signerarea .submit-signeradd a img{left: 5px; position: relative; top: 2px;}
+
+.addsigner-new-requiredfield .requiredfield{    left: -6px;
+    line-height: 32px;
+    position: relative;}
+
+.attorney-wrapper{ overflow: auto; padding:18px;}
+.attorney-wrapper .non-member-wrraper{padding:15px; border:2px solid #CCC;  -webkit-border-radius:8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;}
+.attorney-wrapper .non-member-wrraper .non-member-area .submit .button{ width:75px; margin-left: 10px; text-decoration:none; cursor:pointer;}
+.attorney-wrapper .to-be-selected-lawfirms{ width:433px; min-height:400px; padding:15px; border:2px solid #CCC; -webkit-border-radius:8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px; margin:20px 0 0 0; float:left;}
+	
+.attorney-wrapper .tobeselectedlawfirms-leftside{ width:425px; height:300px; background: none repeat scroll 0 0 hsl(0, 0%, 90%); border:2px solid #CCC; margin:20px 0 10px 0; }
+.attorney-wrapper #tobeselectedlawfirms tr{ background:#cdcdcd !important; line-height:30px;}
+.attorney-wrapper .now-selectedlawfirm{ width:433px; min-height:400px; border:2px solid #CCC; -webkit-border-radius:8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px; margin:20px 0 0 50px; float:left; padding:15px;}
+.attorney-wrapper #tobeselectedlawfirms a{ color:#000;}
+.attorney-wrapper .filter-search-fltlft{margin:15px 0 0 0;}
+.attorney-wrapper .filter-search-fltlft .button {
+    margin-left: 8px;
+    width: 70px;
+}
+.attorney-wrapper #tobeselectedlawfirms > td{text-align:left !important; padding:0 20px;}
+.attorney-wrapper #tobeselectedlawfirms th{text-align:left !important;  padding:0 20px;}
+.attorney-wrapper .non-member-area{ margin-top:15px; }
+.attorney-wrapper .filter-search-fltlft .button{ width:70px; margin-left:8px;}
+
+.attorney-wrapper .search-select-lawfirm-wrraper{ width:440px; float:left;}
+.attorney-wrapper #tobeselectedlawfirms{  
+    border-bottom: 2px solid hsl(0, 0%, 80%);
+    line-height: 32px; text-align:left !important;}
+
+#add-more-Lawfirm .selected-lawfirms-name{ background: none repeat scroll 0 0 hsl(0, 0%, 80%) !important;
+    line-height: 30px; text-align:left;}
+#add-more-Lawfirm .rownew{border-bottom: 2px solid hsl(0, 0%, 80%);
+    line-height: 32px;
+    text-align: left !important;}
+.now-selectedlawfirm .now-selected-attorney-title{ margin:0 0 60px 0; }
+.now-selectedlawfirm .tobeselectedlawfirms-rightside{ width:425px; height:300px; background: none repeat scroll 0 0 hsl(0, 0%, 90%); border:2px solid #CCC; margin:68px 0 10px 0; }
+.now-selectedlawfirm .see-template{ float:right; margin:10px 0 0 0; }
+.now-selectedlawfirm .submit.see-template-button {
+    margin: 10px 0 0;
+}
+.next-tocontact-client{ float:right; margin:20px 18px 20px 0 ;}
+.submit.next-tocontact-client a{width:70px;}
+.submit.next-tocontact-client a img{ margin-left:4px; }
+.non-member-area #client-email1{ width:240px; }
+.lawfirm-add-button{ float:left; margin:20px 0 0 375px;}
+.lawfirm-add-button a img{ margin-left:5px;}
+.submit.lawfirm-add-button a{width:70px;}
+.non-member-wrraper .err{ margin-left:40px; }
+.lawfirm-office-locations{border-bottom: 2px solid hsl(0, 0%, 80%);
+    padding: 20px;}
+.lawfirm-offices-locations{ padding-bottom:50px; }
+.lawfirm-offices-locations-wrapper{ margin-bottom:90px; }
+.lawfirm-offices-locations-wrapper .submit {
+    margin: 10px 28px 0 0;
+}
+.lawfirmname-offices td{ padding:10px; font-size:13px; font-weight: bold; }
+.lawfirm-offices-locations fieldset{ width:94%; margin:15px auto; padding: 14px 0 28px 0; border:2px solid #CCCCCC;}
+.lawfirmname-offices{margin-left: 20px;}
+.lawfirmname-offices-list-wrapper{ margin:0;}
+.lawfirm-offices-locations legend {
+    font-size: 16px;
+    font-weight: normal;}
+.recently-viewed #adminformclass > td {
+    border-bottom: 1px solid #CCCCCC;}
+	
+.recently-viewed-title {
+    border-bottom: 1px solid #CCCCCC;
+    padding: 12px 20px;
+}
+.auditor-admin td{ padding:4px 0;}
+.editprofile #register1 td {
+    width: 115px;
+}
+.auditor-admin span{ font-size:15px;}
+.auditor-employee-list table.alllist th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px 15px;
+	color:#000;
+	border-top:2px solid #CCC;
+	border-bottom:2px solid #CCC;
+	background:none;
+	text-align:left;
+}
+
+.auditor-employee-list table.alllist td {
+	padding: 8px 15px;
+	font-weight: normal;
+	border-top:2px solid #CCC;
+	border-bottom:2px solid #CCC;
+	background:none;
+}
+
+.auditor-employee-list .alllist a {
+    color: #000;
+}
+.auditor-employee-list{ padding:18px 0;}
+.auditor-employee-list h4{margin: 0 0 10px 14px;}
+
+.attorney-task-list table.alllist th {
+	font-size: 13px;
+	font-weight: normal;
+	padding-top:8px;
+	padding-bottom:8px;
+	padding:8px 18px;
+
+	color:#000;
+	border-top:2px solid #CCC;
+	border-bottom:2px solid #CCC;
+	background:none;
+	text-align:left;
+}
+
+.attorney-task-list table.alllist td {
+
+		padding-top:8px;
+	padding-bottom:8px;
+	padding:8px 18px;
+
+	font-weight: normal;
+	border-top:2px solid #CCC;
+	border-bottom:2px solid #CCC;
+	background:none;
+}
+
+.attorney-task-list .alllist a {
+    color: #000;
+}
+.attorney-task-list{ padding:18px 0;}
+.attorney-task-list h4{margin: 0 0 10px 14px;}
+.editprofile #addoffice > span{ font-size:16px;}
+.attorney-list-tasks{float: right;
+    line-height: 19px;
+    margin-right: 16px;
+    padding-bottom: 5px;
+    vertical-align: top;}
+.attorney-list-tasks-title{ font-size:18px; margin-left: 16px;}
+.attorney-task-list .assignedtask{ padding:0 0 14px 0;}
+.attorney-task-list .partner-name{ width:176px;}
+
+.save-pdf-wrapper{ float:right; margin:15px 0; }
+#save-pdf-button{
+	background: url(../images/btn-bg.png) repeat-x left top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(/pie/PIE.htc);
+	padding: 0 10px 0px 10px;
+	height: 29px;
+	line-height: 29px;
+	display: inline-block;
+	cursor: pointer;
+	color:#fff;
+	margin-top: 0px;
+	border: none;
+	outline: none;
+	text-align:center;}
+
+.attorney-task-list #msg{ padding: 8px 18px; display:none; }
+.auditor-admin-offices{ float:right; margin-right:20px;}
+.auditor-admin-offices-add{ float:right; margin-right:20px;}
+.attorney-task-list-assigned table.alllist th {
+	font-size: 13px;
+	font-weight: normal;
+	padding-top:8px;
+	padding-bottom:8px;
+	padding:8px 16px;
+
+	color:#000;
+	border-top:2px solid #CCC;
+	border-bottom:2px solid #CCC;
+	background:none;
+	text-align:left;
+}
+
+.attorney-task-list-assigned table.alllist td {
+
+		padding-top:8px;
+	padding-bottom:8px;
+	padding:8px 16px;
+
+	font-weight: normal;
+	border-top:2px solid #CCC;
+	border-bottom:2px solid #CCC;
+	background:none;
+}
+
+.attorney-task-list-assigned .alllist a {
+    color: #000;
+}
+.attorney-task-list-assigned{ padding:18px 0;}
+.attorney-task-list-assigned h4{margin: 0 0 10px 14px;}
+.attorney-task-list-assigned .assignedtask{ padding:0 0 14px 0;}
+.attorney-task-list-assigned .partner-name{ width:176px;}
+.no-data-found{ margin-left:16px;}
+.partner-submit{ font-weight:bold; color:#9B9B9B; font-size:13px; }
+.attorney-task-list .list-footer ul li .pagenav {
+color: #b9b9b9 !important;
+}
+.attorney-task-list .list-footer ul li span {
+font-size: 18px;}
+.white_content .sbox-btn-close1 img {
+   left: 39px;
+   position: relative;
+   top: -32px;
+}
+.template-or-pdf{ font-size:15px; padding:0 8px; color:#0000ff; }
+.auditor-search-dashboard{ width:325px;
+float:left;}
+.auditor-search-dashboard .search-client-label{ float:left; }
+.auditor-search-dashboard #filter_search{ margin-top:0px !important; float:left;  border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px; }
+.auditor-search-dashboard .submit input{ float:left; }
+.auditor-search-dashboard .search-client-label{ margin-top:3px; float:left;}
+.recent-view-label{ margin:10px 0;}
+.recent-view-label label{ font-size:13px; margin-left:3px;}
+#tab-container .etabs li + li,
+#tab-container .etabs li + li + li,
+#tab-container .etabs li + li + li + li{ margin-left:-4px;}
+.company-name .authorised-signer-company{ float:left;}
+#tab-container .etabs  .submit #button {
+background: url(../images/btn-bg.png) repeat-x left top;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+position:absolute;
+top:7px;
+right:26px;
+behavior: url(/pie/PIE.htc);
+padding: 0 19px;
+height: 29px;
+line-height: 30px;
+}
+#tab-container .etabs  .submit #button img{ margin-right:4px;}
+
+/*to show the recently viewed*/
+.lastdiv{
+margin-top:100px;
+}
+
+#tab-container .etabs { position:relative;}
+.companyinfoclient-client-info{ margin-top:10px;}
+.companyinfoclient-client-info label{ width:165px;}
+.client-company-table{ margin-left:4px; }
+.client-company-table td input{ width:170px;}
+.client-company-table td{ padding:5px 0;}
+.submit.client-logs-next img{ margin-left:6px;}
+.submit a:hover{ text-decoration:none; cursor:pointer;}
+.now-selectedlawfirm #add-more-Lawfirm .slimScrollDiv td{ padding:0 20px;}
+.selected-lawfirms-name th{ padding:0 20px;}
+.logout-button .log-out-icon{ position:relative; top:3px; padding-right:2px;}
+.recently-viewed-title-heading{ color:#000;}
+ 
+.login-container .web select{height: 31px; padding: 5px 3px 5px 10px; width: 274px;}
+	
+
+.login-box .register-next{ background: url("../images/register_next.png") no-repeat; width:75px; text-align:left; padding:0 12px 2px 12px; line-height:29px;}
+.register-box #register1 .register-next{ background: url("../images/register_next.png") no-repeat; width:75px; text-align:left; padding:0 12px 2px 12px; line-height:29px;}
+.star{ color:#ff0000;}
+#tab-container ul li.tab:hover{background: none repeat scroll 0 0 #E8E8E8; border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0;-moz-border-radius: 10px 10px 0 0;text-decoration: none;}
+#tab-container ul li a:hover{text-decoration: none;}
+
+/* work end by deepak */
+
+.pagination .list-footer ul li span.pagenav{color: #000000 !important;}
+
+.office-address-test .office-address-table{float: right;
+    margin-left: 0;
+    width: 98%;}
+	.office-address-test .office-address-address{float: right;
+    margin-left: 0;
+    width: 99%;}
+.office-address-test span.office-choice{margin-left:10px;}
+
+.attorney-list-tasks span.task-icons{display: inline-block;
+    line-height: 22px;
+    padding: 0 3px;
+    vertical-align: top;
+	
+	}
+	
+.attorney-list-tasks span.task-icons:hover{text-decoration:underline;}
+	
+	.attorney-list-tasks a{
+    display: inline-block;
+    line-height: 0;
+    padding-right: 0px;
+	}
+
+	
+.attorney-list-tasks a:hover{
+	text-decoration:underline;
+	}
+	
+.attorney-list-tasks a.last{border:0 none;}
+.dash-border{display: inline-block;
+    line-height: 22px;
+
+    vertical-align: top;}
+
+.no-found-result-auditor{float: left;
+    margin-left: 19px;
+    width: 120px;}

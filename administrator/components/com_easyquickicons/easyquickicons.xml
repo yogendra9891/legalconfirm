@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+ 	<name>Easyquickicons</name>
+	<!-- The following elements are optional and free of formatting constraints -->
+	<creationDate>August 17, 2012</creationDate>
+	<author>AwyneSoft</author>
+	<authorEmail>support@awynesoft.com</authorEmail>
+	<authorUrl>http://awynesoft.com</authorUrl>
+	<copyright>Copyright (C) 2010 AwyneSoft.com</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.2.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>COM_EASYQUICKICONS_XML_DESCRIPTION</description>
+ 	<scriptfile>script.php</scriptfile>
+ 	<subinstall>
+		<extension type="module" folder="system" 
+			dir="modules/admin/mod_easyquickicons" name="mod_easyquickicons" 
+			client="admin" publish="true" position="icon" title="Easy QuickIcons" ordering="1"/>
+	</subinstall>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install_data.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall_data.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update; New in 2.5 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>easyquickicons.php</filename>
+	</files>
+ 
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="components/com_easyquickicons/assets/images/icon-16-easyquickicons.png">com_easyquickicons</menu>
+		
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>easyquickicons.php</filename>
+			<filename>index.html</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB.com_easyquickicons.ini</language>
+			<language tag="en-GB">language/en-GB.com_easyquickicons.sys.ini</language>
+			<language tag="en-GB">language/en-GB.mod_easyquickicons.ini</language>
+			<language tag="en-GB">language/en-GB.mod_easyquickicons.sys.ini</language>
+		</languages>
+	</administration>
+	<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="Easyquickicons Update Site">http://www.awynesoft.com/jextensions/easyquickicons/lite/easyquickicons-update.xml</server>
+	</updateservers>
+ </extension>

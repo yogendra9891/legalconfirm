@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+.deal{
+margin:20px;
+font-size:14px;
+boder:0px;
+}
+table {
+    border-collapse: collapse !important;
+}
+
+.textsize{
+	font-weight:bold;
+	font-size:14px;
+	}
+
+
+table{
+	width:100%;
+	}
+table.hovertable th {
+	/*background-color:#c3dde0;*/
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.hovertable tr {
+	/*background-color:#d4e3e5;*/
+}
+table.hovertable td {
+	border-width: 1px;
+	padding: 10px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}

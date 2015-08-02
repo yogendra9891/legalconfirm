@@ -1,0 +1,70 @@
+/* tutorial */
+
+textarea {
+	width: 400px;
+	max-width: 400px;
+	height: 150px;
+	line-height: 150%;
+}
+
+input:hover,textarea:hover,input:focus,textarea:focus {
+/*	border-color: #617798;*/
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+}
+
+.form label {
+	/*margin-left: 10px;*/ margin-left: 0px;
+	/*color: #999999;*/
+}
+
+.registration {
+	margin-left: 300px;
+	width: 557px;
+}
+
+#register1 p {
+	margin: 15px 0 !important;
+	line-height: 24px;
+	width:361px;
+}
+
+
+
+.labelwidth {
+	width: 400px;
+}
+
+tr,td {
+	border: 0px solid #DDDDDD !important;
+}
+
+.button input {
+	background: none repeat scroll 0 0 #617798 !important;
+	border: 0 none !important;
+	color: #FFFFFF !important;
+	float:left;
+	margin-right:12px;
+	cursor: pointer;
+	font-size: 14px !important;
+	padding: 1px 15px !important;
+	width: auto !important;
+}
+td{
+width:90px;
+}
+.tccheck{
+height:300px;
+overflow:auto;
+}
+
+.tctext{
+     float: right;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 40px;
+}
+.tccheckbox{
+padding-left:7px;
+}
+.emp-registration-form .registration2 td{ width:105px; }
+

@@ -1,0 +1,15 @@
+.icon-48-easyquickicons {
+	background-image: url(../../../../../../administrator/components/com_easyquickicons/assets/images/icon-48-easyquickicons.png);
+}
+.icon-32-upgrade {
+	background-image: url(../../../../../../administrator/components/com_easyquickicons/assets/images/icon-32-upgrade.png);
+}
+.eqi_footer{
+	margin: 0 auto;
+	text-align: center;
+}
+.proversion{
+	float:left;
+	font-style:italic;
+	line-height: 24px;
+}
